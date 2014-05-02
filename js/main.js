@@ -1,4 +1,4 @@
-//yeti 2014 full main
+
 $(document).ready(function() {
   var total = stage.storyboards.length,
   i;

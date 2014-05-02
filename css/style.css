@@ -77,22 +77,22 @@
 }
 #indexg2 {
 	right:180px;
-	top: 1000px;
+	top: 30px;
 	position: absolute;
 }
 #indexg1 {
-	left: 500px;
-	top: 1000px;
+	left: 50px;
+	top: 0px;
 	position: absolute
 }
 #indexg0 {
 	left: 50px;
-	top: 1000px;
+	top: 0px;
 	position: absolute;
 }
 #indexg3 {
 	right: 400px;
-	top: 1000px;
+	top: 0px;
 	position: absolute;
 }
 
