@@ -437,7 +437,7 @@
 	position:absolute; bottom:0;
 	z-index:0;
 }
-.back-mountain,.front-mountain, .car, .carsm, .road {
+.back-mountain,.front-mountain, .car, .carsm, .road, .back-sea,.front-sea, .fish, .fishsm {
 	position:absolute;
 	width:100%;
 	height:100%;
@@ -473,4 +473,18 @@
     background:url(../img/road.png) left bottom repeat-x;
 	width:100%;
 	height:100%;
+}
+.back-sea {
+	background:url(../img/sea1.png) center bottom repeat-x;
+	z-index:0;
+}
+.front-sea {
+	background:url(../img/sea2.png) center bottom repeat-x;
+	z-index:10;
+}
+.fish {
+	background:url(../img/fish2.png) center bottom repeat-x;
+}
+.fishsm {
+	background:url(../img/fish1.png) center bottom repeat-x;
 }

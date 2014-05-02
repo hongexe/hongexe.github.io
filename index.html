@@ -101,11 +101,10 @@
 <div class="banner">
   <div class="storyboard" id="services">
     <div class="animation-container">
-      <div class="back-mountain"> </div>
-      <div class="front-mountain"> </div>
-      <div class="road"> </div>
-      <div class="carsm"> </div>
-      <div class="car"> </div>
+      <div class="back-sea"> </div>
+      <div class="front-sea"> </div>
+      <div class="fishsm"> </div>
+      <div class="fish"> </div>
     </div>
     <div class="container serlist">
       <div class="row mt10">
@@ -263,6 +262,26 @@
 		$('.cloud').backgroundMove({
           moveDelay: 30,
           movePx: 1,
+          direction: 'right'
+        });
+		$('.back-sea').backgroundMove({
+          moveDelay: 60,
+          movePx: 1,
+          direction: 'left'
+        });
+        $('.front-sea').backgroundMove({
+          moveDelay: 20,
+          movePx: 1,
+          direction: 'left'
+        });
+        $('.fish').backgroundMove({
+          moveDelay: 1,
+          movePx: 1,
+          direction: 'right'
+        });
+		$('.fishsm').backgroundMove({
+          moveDelay: 1,
+          movePx: 3,
           direction: 'right'
         });
 		$('#workss').easyBackground({
