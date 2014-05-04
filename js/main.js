@@ -55,7 +55,7 @@ var stage = {
   active: 0,
   goto: function(index) {
     if (index < 0) index = stage.active = 0;
-    if (index > 4) index = stage.active = 3;
+    if (index > 4) index = stage.active = 4;
     $('[_to="' + stage.active + '"]').css({
       'background-position': stage.storyboards[stage.active].lift,
       'cursor': 'pointer'
