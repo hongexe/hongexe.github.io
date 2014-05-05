@@ -23,14 +23,14 @@ var stage = {
   },
   {
     id: 'skills',
-    background: '#f2f2f2'
   },
   {
     id: 'services',
     background: '#f2f2f2'
   },
   {
-    id: 'steps'
+    id: 'steps',
+	background: '#fbfbfb'
   },
   {
     id: 'works'
