@@ -1806,6 +1806,7 @@ table th[class*="col-"] {
 }
 
 @media (max-width: 767px) {
+
   .table-responsive {
     width: 100%;
     margin-bottom: 15px;
@@ -1815,6 +1816,12 @@ table th[class*="col-"] {
     -ms-overflow-style: -ms-autohiding-scrollbar;
     -webkit-overflow-scrolling: touch;
   }
+#skill_sm{
+	display:block;
+	}
+#skill_lg{
+	display:none;
+	}
 #serlist_sm{
 	  display:block;
 	  }
@@ -2213,6 +2220,12 @@ textarea.input-lg {
 @media (min-width: 768px) {
 .myinfo{
 	position:relative;left:50%; width:360px; margin-left:-180px;
+	}
+#skill_sm{
+	display:none;
+	}
+#skill_lg{
+	display:block;
 	}
 #serlist_sm{
 	  display:none;
