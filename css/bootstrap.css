@@ -2214,7 +2214,7 @@ textarea.input-lg {
 .myinfo{
 	position:relative;left:50%; width:360px; margin-left:-180px;
 	}
-	  #serlist_sm{
+#serlist_sm{
 	  display:none;
 	  }
 #serlist_lg{

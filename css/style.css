@@ -411,6 +411,24 @@
 	padding-bottom:20px;
 	background:url('../images/ynext.png') no-repeat 50% 50%;
 }
+@media (max-width: 767px) {
+	.goNext {
+	margin-left:-34px;
+	width:67px;
+	height:35px;
+	position:absolute;
+	left:50%;
+	z-index:50;
+	cursor:pointer;
+	-webkit-animation:yitesc 2s ease-in infinite;
+}
+.goNext div {
+	width:67px;
+	height:21px;
+	padding-bottom:10px;
+	background:url('../images/ynext1.png') no-repeat 50% 50%;
+}
+	}
 @-webkit-keyframes yitesc {
 	0% { margin-top:0px; }
 	40% { margin-top:30px; }
