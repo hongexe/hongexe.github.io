@@ -1840,9 +1840,13 @@ h1{
 .sercon p{
 	color:#999;
 	}
+
 .resumetitle{
 	  font-size:30px !important;
 	  }
+.myinfo{
+	position:relative; margin-left:20px;
+	}
   .march{
 	  display:none;
 	  }
@@ -2207,6 +2211,9 @@ textarea.input-lg {
 }
 
 @media (min-width: 768px) {
+.myinfo{
+	position:relative;left:50%; width:360px; margin-left:-180px;
+	}
 	  #serlist_sm{
 	  display:none;
 	  }
