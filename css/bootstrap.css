@@ -1835,6 +1835,9 @@ table th[class*="col-"] {
 h1{
 	font-size:2em !important;
 	}
+h2{
+	font-size:1em !important;
+	}
 .smalltitle{
 	font-size:1.5em !important;
 	}
@@ -1846,6 +1849,7 @@ h1{
 	}
 .sercon p{
 	color:#999;
+	font-size:0.8em !important;
 	}
 
 .resumetitle{
