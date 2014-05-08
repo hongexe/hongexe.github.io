@@ -1859,6 +1859,12 @@ h2{
 .myinfo{
 	position:relative; margin-left:20px;
 	}
+.self{
+	font-size:1em; line-height:25px; margin-top:10px;
+	}
+.honer{
+	text-align:left; position:relative; margin-left:20px; font-size:16px; margin-top:10px;
+	}
   .march{
 	  display:none;
 	  }
@@ -2237,6 +2243,12 @@ textarea.input-lg {
 	  }
 #serlist_lg{
 	display:block;
+	}
+.self{
+	font-size:16px; line-height:40px; margin-top:60px;
+	}
+.honer{
+	text-align:left; width:600px; position:relative; left:50%; margin-left:-140px; font-size:16px; margin-top:60px;
 	}
   .form-inline .form-group {
     display: inline-block;
