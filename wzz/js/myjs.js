@@ -14,18 +14,26 @@ $$('div').tap(function() {
     // affects "span" children/grandchildren
     $$(this).style('color', 'red');
 });*/ 
-	 window.onresize = window.onload = function(){
-					var image =document.getElementsByTagName("img"); 
-					 if(image.width>30 && image.height>30){   
-            if(image.width>window.innerWidth){  
-                image.width=window.innerWidth;   
-                image.height=(388*window.innerWidth)/575;   
-            }else{   
-                image.width=575;   
-                image.height=388;   
-            }   
-  
-					 }
-			}	
+window.onresize = window.onload = function(){
+					var w,h
+					if(!!(window.attachEvent && !window.opera))
+					{
+						h = document.documentElement.clientHeight;
+						w = document.documentElement.clientWidth;
+					}else{
+						h =	window.innerHeight;
+						w = window.innerWidth;
+					}
+				var bgImg = document.getElementById('headbg').getElementsByTagName('img')[0];
+				if(w < 575)
+				{
+					bgImg.width = w ;
+				bgImg.height= (388/575)*w ;
+				}else{
+				bgImg.width = 575 ;
+				bgImg.height= 388;
+					}
+										
+			}			
 
 
