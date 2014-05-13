@@ -24,7 +24,7 @@ window.onresize = window.onload = function(){
 						h =	window.innerHeight;
 						w = window.innerWidth-40;
 					}
-				var bgImg = document.getElementById('headbg').getElementsByTagName('img')[0];
+				var bgImg = document.getElementById('bookpic').getElementsByTagName('img')[0];
 				if(w < 575)
 				{
 					bgImg.width = w ;
