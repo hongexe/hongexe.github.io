@@ -7,31 +7,40 @@
 <title>摇的是你，不是寂寞</title>
 <link href="css/css.css" rel="stylesheet">
 
-<script type="text/javascript">
-	 window.onresize = window.onload = function(){
-					var image =document.getElementsByTagName("img"); 
-					 if(image.width>30 && image.height>30){   
-            if(image.width>window.innerWidth){  
-                image.width=window.innerWidth;   
-                image.height=(388*window.innerWidth)/575;   
-            }else{   
-                image.width=575;   
-                image.height=388;   
-            }   
-  
-					 }
-			}
-</script>
+
  
 </head>
 
 <body>
 <div class="title"><span>New</span>第95节：一个人的礼物</div>
-<img src="images/book.png" width="575" height="388" class="bookpic">
+<div id="headbg"><img src="images/book.png" class="bookpic"></div>
 <div class="photoby">&copy;Photo by 某粉丝</div>
 <div>
 <div class="author">《摇的是你，不是寂寞》<br />&nbsp;&nbsp;文 / 二当家的</div>
 <div class="love">4330</div>
 </div>
+<script type="text/javascript">
+	 window.onresize = window.onload = function(){
+					var w,h
+					if(!!(window.attachEvent && !window.opera))
+					{
+						h = document.documentElement.clientHeight;
+						w = document.documentElement.clientWidth;
+					}else{
+						h =	window.innerHeight;
+						w = window.innerWidth;
+					}
+				var bgImg = document.getElementById('headbg').getElementsByTagName('img')[0];
+				if(w < 575)
+				{
+					bgImg.width = w ;
+				bgImg.height= (388/575)*w ;
+				}else{
+				bgImg.width = 575 ;
+				bgImg.height= 388;
+					}
+										
+			}			
+</script>
 </body>
 </html>
