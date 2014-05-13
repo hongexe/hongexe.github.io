@@ -93,16 +93,18 @@ a{
 	width:19%;
 	list-style:none;
 	position:relative;
-	height:70px;
+	height:75px;
 	border-right:1px solid #e8e8e8;
 	background-color:#f3f3f3;
 	}
 .menu ul li a{
 	position:absolute;
+	top:15px;
 	text-align:center;
 	width:100%;
 	padding-top:33px;	
 	color:#8e8e8e;
+	font-size:0.9em;
 	}
 #eye{
 	background:url(../images/eye.png) top center no-repeat;
