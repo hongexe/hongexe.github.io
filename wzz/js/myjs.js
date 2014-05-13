@@ -21,23 +21,23 @@ $(document).ready(function() {
                 });
 				
 $("#list").click(function(){
-   $(this).css({"background":"url(../images/list.png) top center no-repeat","color":"#65c8eb"});
+   $(this).css({"background":"url(images/list.png) top center no-repeat","color":"#65c8eb"});
                 });
 			
 $("#discuss").click(function(){
-   $(this).css({"background":"url(../images/discuss.png) top center no-repeat","color":"#65c8eb"});
+   $(this).css({"background":"url(images/discuss.png) top center no-repeat","color":"#65c8eb"});
                 });
 
 $("#add").click(function(){
-   $(this).css({"background":"url(../images/add.png) top center no-repeat","color":"#65c8eb"});
+   $(this).css({"background":"url(images/add.png) top center no-repeat","color":"#65c8eb"});
                 });
 				
 $("#help").click(function(){
-   $(this).css({"background":"url(../images/help.png) top center no-repeat","color":"#65c8eb"});
+   $(this).css({"background":"url(images/help.png) top center no-repeat","color":"#65c8eb"});
                 });
 
 $("#eye").click(function(){
-   $(this).css({"background":"url(../images/eye.png) top center no-repeat","color":"#65c8eb"});
+   $(this).css({"background":"url(images/eye.png) top center no-repeat","color":"#65c8eb"});
                 });
 				
 				
