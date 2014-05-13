@@ -82,3 +82,41 @@ a{
 	margin-top:20px;
 	clear:both;
 	}
+.menu{
+	position:fixed;
+	bottom:0;
+	width:100%;
+	}
+.menu ul{ margin:0; padding:0;}
+.menu ul li{
+	float:left;
+	width:19%;
+	list-style:none;
+	position:relative;
+	height:70px;
+	border-right:1px solid #e8e8e8;
+	background-color:#f3f3f3;
+	}
+.menu ul li a{
+	position:absolute;
+	text-align:center;
+	width:100%;
+	padding-top:33px;	
+	color:#8e8e8e;
+	}
+#eye{
+	background:url(../images/eye.png) top center no-repeat;
+	color:#65c8eb;
+	}
+#list{
+	background:url(../images/list1.png) top center no-repeat;
+	}
+#discuss{
+	background:url(../images/discuss1.png) top center no-repeat;
+	}
+#add{
+	background:url(../images/add1.png) top center no-repeat;
+	}
+#help{
+	background:url(../images/help1.png) top center no-repeat;
+	}
