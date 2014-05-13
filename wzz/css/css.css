@@ -6,7 +6,7 @@ body, p{
 	padding:15px 20px;
 }
 body {
-	font: normal 100% "Microsoft Yahei", "SimHei ";
+	font: normal 100% "Microsoft Yahei", "SimHei ","Arial";
 	background-color:#f3f3f3;
 	color:#666;
 }
@@ -21,9 +21,9 @@ a{
 	border-bottom:1px solid #65c8eb;
 	border-top:1px solid #65c8eb;
 	color:#888;
-	height:3em;
+	height:2.6em;
 	font-size:1em;
-	line-height:2.7em;
+	line-height:2.5em;
 	}
 .title span{
 	font-size:1.5em;
@@ -31,7 +31,7 @@ a{
 	margin-right:15px;
 	}
 #bookpic{
-	margin-top:20px;
+	margin-top:15px;
 	}
 .photoby{
 	width:100%;
