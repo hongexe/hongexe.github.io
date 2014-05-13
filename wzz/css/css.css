@@ -48,7 +48,6 @@ a{
 	width:auto;
 	float:left;
 	font-size:0.9em;
-	margin-top:10px;
 	}
 .love{
 	float:right;
@@ -81,4 +80,5 @@ a{
 	font-size:0.9em;
 	color:#888;
 	margin-top:20px;
+	clear:both;
 	}
