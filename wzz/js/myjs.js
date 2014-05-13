@@ -14,6 +14,17 @@ $$('div').tap(function() {
     // affects "span" children/grandchildren
     $$(this).style('color', 'red');
 });*/ 
+$(document).ready(function() {
+                $("#love").click(function(){
+   $(this).addClass("loveclick");
+   $(this).removeClass("love")
+                });
+				});
+
+				
+				
+				
+				
 window.onresize = window.onload = function(){
 					var w,h
 					if(!!(window.attachEvent && !window.opera))
@@ -35,5 +46,4 @@ window.onresize = window.onload = function(){
 					}
 										
 			}			
-
 
