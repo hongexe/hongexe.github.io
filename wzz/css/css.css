@@ -59,7 +59,7 @@ a{
 	}
 .love a{
 	color:#999;
-	padding-right:35px;
+	padding-right:30px;
 	}
 .loveclick{
 	float:right;
@@ -68,12 +68,11 @@ a{
 	line-height:4em;
 	background:url(../images/heart.png) center right no-repeat;
 	position:relative;
-	margin-top:10px;
 	
 	}
 .loveclick a{
 	color:#65c8eb;
-	padding-right:35px;
+	padding-right:30px;
 	}
 .content{
 	font-size:0.9em;
