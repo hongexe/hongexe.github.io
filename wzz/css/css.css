@@ -1,0 +1,63 @@
+@charset "utf-8";
+/* CSS Document */
+
+body, p{
+	margin:0;
+	padding:15px 20px;
+}
+body {
+	font: normal 100% "Microsoft Yahei", "SimHei ";
+	background-color:#f3f3f3;
+	color:#666;
+}
+img {
+	border: 0px;
+}
+a{
+	text-decoration:none;
+	}
+.title{
+	width:100%;
+	border-bottom:1px solid #65c8eb;
+	border-top:1px solid #65c8eb;
+	color:#888;
+	height:3em;
+	font-size:1em;
+	line-height:2.7em;
+	}
+.title span{
+	font-size:1.5em;
+	color:#e9654f;
+	margin-right:15px;
+	}
+.bookpic{
+	max-width:100%;
+	margin-top:20px;
+	}
+.photoby{
+	width:100%;
+	text-align:right;
+	color:#999;
+	font-size:0.8em;
+	}
+.author{
+	border-bottom:1px solid #65c8eb;
+	border-top:1px solid #65c8eb;
+	color:#65c8eb;
+	padding:10px 0px;
+	line-height:1.5em;
+	width:auto;
+	float:left;
+	}
+.love{
+	float:right;
+	color:#65c8eb;
+	height:4em;
+	line-height:4em;
+	}
+.love{
+	float:right;
+	color:#000;
+	height:4em;
+	line-height:4em;
+	}
