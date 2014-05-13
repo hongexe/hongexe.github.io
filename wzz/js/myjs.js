@@ -15,58 +15,40 @@ $$('div').tap(function() {
     $$(this).style('color', 'red');
 });*/ 
 $(function(){  
-  
 var imglist =document.getElementsByTagName("img");  
 //安卓4.0+等高版本不支持window.screen.width，安卓2.3.3系统支持  
-/* 
-var _width = window.screen.width; 
-var _height = window.screen.height - 20; 
- 
-var _width = document.body.clientWidth; 
-var _height = document.body.clientHeight - 20; 
-*/  
-var _width,   
-    _height;  
+var _width;  
 doDraw();  
   
 window.onresize = function(){  
+    //捕捉屏幕窗口变化，始终保证图片根据屏幕宽度合理显示  
     doDraw();  
 }  
   
 function doDraw(){  
     _width = window.innerWidth;  
-    _height = window.innerHeight - 20;  
     for( var i = 0, len = imglist.length; i < len; i++){  
-        DrawImage(imglist[i],_width,_height);  
+        DrawImage(imglist[i],_width);  
     }  
 }  
   
-function DrawImage(ImgD,_width,_height){   
+function DrawImage(ImgD,_width){   
     var image=new Image();   
     image.src=ImgD.src;   
     image.onload = function(){  
+        //限制，只对宽高都大于30的图片做显示处理  
         if(image.width>30 && image.height>30){   
-       
-            if(image.width/image.height>= _width/_height){   
-                if(image.width>_width){  
-                    ImgD.width=_width;   
-                    ImgD.height=(image.height*_width)/image.width;   
-                }else{   
-                    ImgD.width=image.width;   
-                    ImgD.height=image.height;   
-                }   
+            if(image.width>_width){  
+                ImgD.width=_width;   
+                ImgD.height=(image.height*_width)/image.width;   
             }else{   
-                if(image.height>_height){  
-                    ImgD.height=_height;   
-                    ImgD.width=(image.width*_height)/image.height;   
-                }else{   
-                    ImgD.width=image.width;   
-                    ImgD.height=image.height;   
-                }   
-            }  
+                ImgD.width=image.width;   
+                ImgD.height=image.height;   
+            }   
+  
         }     
     }  
   
 }  
      
-})  
+}) 
