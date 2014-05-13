@@ -19,10 +19,10 @@ window.onresize = window.onload = function(){
 					if(!!(window.attachEvent && !window.opera))
 					{
 						h = document.documentElement.clientHeight;
-						w = document.documentElement.clientWidth;
+						w = document.documentElement.clientWidth-40;
 					}else{
 						h =	window.innerHeight;
-						w = window.innerWidth;
+						w = window.innerWidth-40;
 					}
 				var bgImg = document.getElementById('headbg').getElementsByTagName('img')[0];
 				if(w < 575)
