@@ -87,6 +87,7 @@ a{
 	bottom:0;
 	width:100%;
 	margin-left:-10px;
+	border-top:15px solid #f3f3f3;
 	}
 .menu ul{ margin:0; padding:0;}
 .menu ul li{
@@ -94,13 +95,12 @@ a{
 	width:19%;
 	list-style:none;
 	position:relative;
-	height:75px;
+	height:70px;
 	border-right:1px solid #e8e8e8;
 	background-color:#f3f3f3;
 	}
 .menu ul li a{
 	position:absolute;
-	top:15px;
 	text-align:center;
 	width:100%;
 	padding-top:33px;	
