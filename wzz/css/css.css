@@ -86,6 +86,7 @@ a{
 	position:fixed;
 	bottom:0;
 	width:100%;
+	margin-left:-10px;
 	}
 .menu ul{ margin:0; padding:0;}
 .menu ul li{
