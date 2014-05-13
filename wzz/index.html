@@ -6,7 +6,23 @@
 <meta name="viewport" content="minimal-ui,width=device-width,initial-scale=1.0,maximum-scale=1.0,minimum-scale=1.0,user-scalable=no">
 <title>摇的是你，不是寂寞</title>
 <link href="css/css.css" rel="stylesheet">
-<script src="js/myjs.js"></script> 
+
+<script type="text/javascript">
+	 window.onresize = window.onload = function(){
+					var image =document.getElementsByTagName("img"); 
+					 if(image.width>30 && image.height>30){   
+            if(image.width>window.innerWidth){  
+                image.width=window.innerWidth;   
+                image.height=(388*window.innerWidth)/575;   
+            }else{   
+                image.width=575;   
+                image.height=388;   
+            }   
+  
+					 }
+			}
+</script>
+ 
 </head>
 
 <body>
