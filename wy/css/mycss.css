@@ -48,6 +48,7 @@ animation:redsecond 5s ease infinite;
 .nav a{ display:block; width:210px; height:113px; float:left; text-align:center; line-height:113px; color:#fff; font-family:KaiTi,KaiTi_GB2312; font-size:60px; margin-right:5px;}
 .nav a:active{ background-color:#000; color:#d1bc96;}
 .wltxt{ background:url(../images/wltxt.png); width:97px; height:179px; float:left; position:relative; margin-top:153px;}
+.wlmstxt{ font-family:KaiTi,KaiTi_GB2312; font-size:35px; line-height:65px; width:425px; float:left; position:relative; margin-top:150px; color:#fff; margin-left:35px;}
 
 
 @keyframes redfirst
