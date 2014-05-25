@@ -2,5 +2,6 @@
 
 		$(document).ready(function() {
 			$('#wlpage').fullpage({
+				verticalCentered: false,
 			});
 		});
