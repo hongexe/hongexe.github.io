@@ -2,6 +2,7 @@
 
 		$(document).ready(function() {
 			$('#wlpage').fullpage({
-				verticalCentered: false,
+				verticalCentered: true,
+				scrollingSpeed: 600,
 			});
 		});
