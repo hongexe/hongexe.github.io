@@ -106,6 +106,14 @@ a{
 	color:#8e8e8e;
 	font-size:0.9em;
 	}
+.menu ul li a:active{
+	position:absolute;
+	text-align:center;
+	width:100%;
+	padding-top:33px;	
+	color:#000;
+	font-size:0.9em;
+	}
 #eye{
 	background:url(../images/eye.png) top center no-repeat;
 	color:#65c8eb;
