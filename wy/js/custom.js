@@ -6,3 +6,12 @@
 				scrollingSpeed: 600,
 			});
 		});
+		
+		
+		
+var myVideo=document.getElementById("video1");
+
+function play()
+{ 
+  myVideo.play(); 
+} 
