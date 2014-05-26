@@ -48,13 +48,20 @@ animation:redsecond 5s ease infinite;
 .nav a{ display:block; width:210px; height:113px; float:left; text-align:center; line-height:113px; color:#fff; font-size:60px; margin-right:5px;}
 .nav a:active{ background-color:#000; color:#d1bc96;}
 .layerbottom{ position:fixed; bottom:0;left:50%; margin-left:-320px; width:640px; height:94px; background:url('../images/layerbottom.jpg') no-repeat; z-index:2; }
-.wltxt{ background:url(../images/wltxt.png); width:97px; height:179px; float:left; position:relative; margin-top:153px;}
-.wlmstxt{ font-family:KaiTi,KaiTi_GB2312; font-size:35px; line-height:65px; width:425px; height:179px; float:left; position:relative; margin-top:150px; color:#fff; margin-left:35px;}
+.wltxt{ background:url(../images/wltxt.png); width:97px; height:179px; float:left; position:relative; margin-top:153px; left:50px;}
+.wlmstxt{ font-size:35px; line-height:65px; width:425px; height:179px; float:left; position:relative; margin-top:150px; color:#fff; left:83px;}
 .wlvideo{ background:url(../images/wlvbg.jpg); width:520px; height:365px; position:relative; margin:0 auto; top:365px; }
 .vbtn{ width:113px; height:113px; background:url(../images/vbtn.png); position:relative; margin:0 auto; top:133px;}
 .vbtn:active{ background:url(../images/vbtn2.png);}
 #video1{ position:absolute; left:-1000px;}
-
+.mp{ position:relative; height:100%; width:640px;}
+.mp a{ display:block; float:left; width:213px; height:740px; position:absolute; bottom:94px;}
+.mp a.mpone{background:url(../images/mp1.png);}
+.mp a.mpone:active{background:url(../images/mp1a.png);}
+.mp a.mptwo{background:url(../images/mp2.png); margin-left:213px;}
+.mp a.mptwo:active{background:url(../images/mp2a.png); margin-left:213px;}
+.mp a.mpthree{background:url(../images/mp3.png); margin-left:426px;}
+.mp a.mpthree:active{background:url(../images/mp3a.png); margin-left:426px;}
 
 @keyframes redfirst
 {
