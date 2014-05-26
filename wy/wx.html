@@ -22,17 +22,19 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jQueryRotate.js"></script>
 </head>
 <body>
-<div class="nav"><a href="wl.html">武林</a><a href="wx.html" class="click">武学</a><a href="mf.html" class="last">秘法</a></div>
-<div class="layerbottom" id="layerbottom">
-  <div class="lbclose" id="lbclose"></div>
-  <div class="lbtitle" id="lbtitle"></div>
-  <div class="lbcontent"> 请阁下留下手机号：
+<div class="nav"><a href="wl.html" class="wl"></a><a href="wx.html" class="wxclick"></a><a href="mf.html" class="mf last"></a></div>
+<div class="layerbottom">
+  <div class="lbclose"><div class="updown"></div></div>
+  <div class="lbtitle"></div>
+  <div class="lbcontent">
+  <img src="images/phone.png" width="331" height="37">
     <input type="tel" id="phone" name="phone">
     <br />
     <br />
-    请阁下选择设备类型：<br />
+    <img src="images/type.png" width="371" height="37">
     <br />
     <br />
     <br />
@@ -43,19 +45,19 @@
 <div id="wlpage">
   <div class="section">
     <div class="wxtxt"></div>
-    <div class="wlmstxt">所谓"武学"，千变万化，无所其宗。阁下认为，这武学的至高境界为何？</div>
+    <div class="wxmstxt"></div>
     <div class="wxwrap">
       <div class="wxc"></div>
-      <span class="rx" id="rx">人性</span> <span class="jq" id="jq">技巧</span> <span class="bf" id="bf">爆发</span> <span class="jx" id="jx">绝学</span> <span class="ll" id="ll">力量</span> <span class="nl" id="nl">内力</span>
-      <div class="poplayer" id="poplayer">
+      <span class="rx" ></span> <span class="jq" ></span> <span class="bf" ></span> <span class="jx" ></span> <span class="ll" ></span> <span class="nl" ></span>
+      <div class="poplayer">
         <div class="popclose" id="popclose"></div>
-        <div class="popcontent"><span>阁下还未参透这"武学"的至高境界，何不再三思三思？</span></div>
+        <div class="popcontent"><span><img src="images/cw.png" width="490" height="184"></span></div>
       </div>
     </div>
   </div>
   <div class="section">
     <div class="wxtxt"></div>
-    <div class="wlmstxt">所谓"武学"，千变万化，无所其宗。阁下认为，这武学的至高境界为何？</div>
+    <div class="wxmstxt"></div>
     <div class="wxlp"> <a class="lpone" href="javascript:viod(0);" onClick="play()"></a> <a class="lptwo" href="javascript:viod(0);" onClick="play()"></a> <a class="lpthree" href="javascript:viod(0);" onClick="play()"></a>
       <video id="video1" width="420">
         <source src="http://www.w3school.com.cn/example/html5/mov_bbb.mp4" type="video/mp4" />

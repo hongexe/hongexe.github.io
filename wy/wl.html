@@ -22,17 +22,19 @@
 <script type="text/javascript" src="js/jquery.min.js"></script>
 <script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
 <script type="text/javascript" src="js/jquery-ui.min.js"></script>
+<script type="text/javascript" src="js/jQueryRotate.js"></script>
 </head>
 <body>
-<div class="nav"><a href="wl.html" class="click">武林</a><a href="wx.html">武学</a><a href="mf.html" class="last">秘法</a></div>
-<div class="layerbottom" id="layerbottom">
-  <div class="lbclose" id="lbclose"></div>
-  <div class="lbtitle" id="lbtitle"></div>
-  <div class="lbcontent"> 请阁下留下手机号：
+<div class="nav"><a href="wl.html" class="wlclick"></a><a href="wx.html" class="wx"></a><a href="mf.html" class="mf last"></a></div>
+<div class="layerbottom">
+  <div class="lbclose"><div class="updown"></div></div>
+  <div class="lbtitle"></div>
+  <div class="lbcontent">
+  <img src="images/phone.png" width="331" height="37">
     <input type="tel" id="phone" name="phone">
     <br />
     <br />
-    请阁下选择设备类型：<br />
+    <img src="images/type.png" width="371" height="37">
     <br />
     <br />
     <br />
@@ -43,7 +45,7 @@
 <div id="wlpage">
   <div class="section">
     <div class="wltxt"></div>
-    <div class="wlmstxt">啊，你终于来了。当你拿到这份密函，我已在这所谓"武林"等候多时。</div>
+    <div class="wlmstxt"></div>
     <div class="wlvideo">
       <div class="vbtn" onClick="play()"></div>
     </div>
