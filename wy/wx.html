@@ -1,50 +1,81 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE HTML>
+<html>
 <head>
+<title></title>
+<meta name="keywords" content="" />
+<meta name="description" content="" />
+<meta name="format-detection" content="telephone=no"/>
+<meta name="format-detection" content="address=no"/>
+<meta content="target-densitydpi=device-dpi,width=640,user-scalable=no" name="viewport" id="viewport">
+<meta name="author" content="网易，NetEase Inc." />
+<meta name="copyright" content="网易，NetEase Inc." />
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-<title>无标题文档</title>
+<link rel="dns-prefetch" href="http://res.nie.netease.com">
+<script charset="gb2312" src="http://res.nie.netease.com/comm/js/jquery(mixNIE).last.js"></script>
+
+<!---->
+<meta name='yixin-share-desc' content=''>
+<meta name='yixin-share-image' content=''>
+
+<!---->
+<link type="text/css" rel="stylesheet" href="css/mycss.css" media="all" />
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui.min.js"></script>
+
+
 </head>
-
 <body>
-
-<div style="text-align:center;">
-  <button onclick="playPause()">播放/暂停</button> 
-  <button onclick="makeBig()">大</button>
-  <button onclick="makeNormal()">中</button>
-  <button onclick="makeSmall()">小</button>
-  <br /> 
-  <video id="video2" width="420" style="margin-top:15px;">
+<div class="nav"><a href="wl.html">武林</a><a href="wx.html" class="click">武学</a><a href="mf.html" class="last">秘法</a></div>
+<div class="layerbottom" id="layerbottom">
+<div class="lbclose" id="lbclose"></div>
+<div class="lbtitle" id="lbtitle"></div>
+<div class="lbcontent">
+请阁下留下手机号：
+<input type="tel" id="phone" name="phone"><br /><br />
+请阁下选择设备类型：<br /><br /><br /><br /><br />
+<input type="button" id="submit" name="submit" value="">
+</div>
+</div>
+<div id="wlpage">
+    <div class="section">
+    <div class="wxtxt"></div>
+    <div class="wlmstxt">所谓"武学"，千变万化，无所其宗。阁下认为，这武学的至高境界为何？</div>
+   <div class="wxwrap">
+    <div class="wxc"></div>
+    <span class="rx">人性</span>
+    <span class="jq">技巧</span>
+    <span class="bf">爆发</span>
+    <span class="jx">绝学</span>
+    <span class="ll">力量</span>
+    <span class="nl">内力</span>
+    </div>
+    </div>
+    <div class="section">
+    <div class="wxtxt"></div>
+    <div class="wlmstxt">所谓"武学"，千变万化，无所其宗。阁下认为，这武学的至高境界为何？</div>
+    <div class="wxlp">
+    <a class="lpone" href="javascript:viod(0);" onClick="play()"></a>
+    <a class="lptwo" href="javascript:viod(0);" onClick="play()"></a>
+    <a class="lpthree" href="javascript:viod(0);" onClick="play()"></a>
+    <video id="video1" width="420">
     <source src="http://www.w3school.com.cn/example/html5/mov_bbb.mp4" type="video/mp4" />
     <source src="http://www.w3school.com.cn/example/html5/mov_bbb.ogg" type="video/ogg" />
-    Your browser does not support HTML5 video.
   </video>
-</div> 
+    </div>
+    </div>
+</div>
 
+
+<div class="mainwx"></div>
 <script type="text/javascript">
-var myVideo=document.getElementById("video2");
-
-function playPause()
+var myVideo=document.getElementById("video1");
+function play()
 { 
-if (myVideo.paused) 
   myVideo.play(); 
-else 
-  myVideo.pause(); 
 } 
-
-function makeBig()
-{ 
-myVideo.width=560; 
-} 
-
-function makeSmall()
-{ 
-myVideo.width=320; 
-} 
-
-function makeNormal()
-{ 
-myVideo.width=420; 
-} 
-</script> 
+</script>
+<script type="text/javascript" src="js/jquery.fullPage.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
 </body>
 </html>

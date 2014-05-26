@@ -47,6 +47,7 @@ animation:redsecond 5s ease infinite;
 .nav{ position:fixed; top:0; left:50%; margin-left:-320px; width:100%; height:113px;background:url('../images/navbg.jpg') no-repeat; z-index:2; }
 .nav a{ display:block; width:210px; height:113px; float:left; text-align:center; line-height:113px; color:#fff; font-size:60px; margin-right:5px;}
 .nav a:active{ background-color:#000; color:#d1bc96;}
+.nav a.click{ background-color:#000; color:#d1bc96;}
 .layerbottom{ position:fixed; bottom:0;left:50%; margin-left:-320px; width:640px; height:760px;z-index:2; background-color:#95805b; }
 .lbclose{ width:113px; height:57px;background:url('../images/close.png') no-repeat; position:absolute; left:50%; margin-left:-56px; top:-52px; z-index:-1;}
 .lbtitle{background:url('../images/layerbottom.jpg') no-repeat; width:630px; height:84px; position:relative; margin:0 auto; top:5px;}
@@ -67,6 +68,25 @@ animation:redsecond 5s ease infinite;
 .mp a.mptwo:active{background:url(../images/mp2a.png); margin-left:213px;}
 .mp a.mpthree{background:url(../images/mp3.png); margin-left:426px;}
 .mp a.mpthree:active{background:url(../images/mp3a.png); margin-left:426px;}
+.mainwx{ position: absolute;width:640px;height:1136px;top:50%; left:50%; background:url('../images/bg_wx.jpg') no-repeat;background-size:100%;overflow:hidden; margin-top:-568px; margin-left:-320px; z-index:0;}
+.wxtxt{ background:url(../images/wxtxt.png); width:86px; height:179px; float:left; position:relative; margin-top:153px; left:50px;}
+.wxwrap{position:relative; top:355px; width:100%; height:420px;}
+.wxc{ width:219px; height:221px; background:url(../images/wxclick.png); position:absolute; left:220px; top:95px;}
+.wxwrap span{ color:#fff; background-color:#9f0d0d; padding:10px; font-size:50px;}
+.wxwrap span.rx{ font-size:70px; position:absolute; left:70px; top:40px;}
+.wxwrap span.jq{ font-size:55px; position:absolute; left:45px; top:185px;}
+.wxwrap span.bf{ font-size:90px; position:absolute; left:85px; top:350px;}
+.wxwrap span.jx{ font-size:70px; position:absolute; right:50px; top:0px;}
+.wxwrap span.ll{ font-size:50px; position:absolute; right:55px; top:170px;}
+.wxwrap span.nl{ font-size:80px; position:absolute; right:45px; top:320px;}
+.wxlp{ width:100%; position:relative; top:370px;}
+.wxlp a{ width:180px; height:419px; position:absolute;}
+.wxlp a.lpone{background-image: url(../images/wxfkl.png); left:34px;}
+.wxlp a.lpone:active{background-image: url(../images/wxfkla.png);}
+.wxlp a.lptwo{background-image: url(../images/wxljl.png); left:233px;}
+.wxlp a.lptwo:active{background-image: url(../images/wxljla.png);}
+.wxlp a.lpthree{background-image: url(../images/wxsyl.png); left:433px;}
+.wxlp a.lpthree:active{background-image: url(../images/wxsyla.png);}
 
 @keyframes redfirst
 {
