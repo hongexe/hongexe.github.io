@@ -87,6 +87,10 @@ animation:redsecond 5s ease infinite;
 .wxlp a.lptwo:active{background-image: url(../images/wxljla.png);}
 .wxlp a.lpthree{background-image: url(../images/wxsyl.png); left:433px;}
 .wxlp a.lpthree:active{background-image: url(../images/wxsyla.png);}
+.poplayer{ width:580px; height:470px; position:absolute; top:0px; left:50%; margin-left:-290px;}
+.poplayer .popcontent{ width:470px; height:310px; position:absolute; bottom:0; background-color:#d1bc96; padding:55px;  }
+.poplayer .popcontent span{ background:none;color:#9c3829; line-height:65px; font-size:43px; position:relative; top:50px;}
+.poplayer .popclose{ width:115px; height:53px;background-image: url(../images/popclose.png); margin:0 auto;}
 
 @keyframes redfirst
 {
