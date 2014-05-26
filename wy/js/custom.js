@@ -26,7 +26,7 @@ $('.lbtitle').click(function(){
 	expanded = !expanded;
 });
 $('.lbclose').click(function(){
-		$('.layerbottom').animate({bottom:'-666'},400);
+		$('.layerbottom').animate({bottom:'-666'},600);
 		$('.lbclose').animate({top:'5'},500);
 });
 

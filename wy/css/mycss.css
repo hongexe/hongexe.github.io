@@ -42,7 +42,7 @@ animation:redsecond 5s ease infinite;
 -o-animation:redsecond 5s ease infinite;
 	}
 
-.mainwl{ position: absolute;width:640px;height:1136px;top:50%; left:50%; background:url('../images/bg_wl.jpg') no-repeat;background-size:100%;overflow:hidden; margin-top:-568px; margin-left:-320px; z-index:0;}
+.mainwl{ position: absolute;width:640px;height:100%;top:0; left:50%; background:url('../images/bg_wl.jpg') no-repeat;overflow:hidden; margin-left:-320px; z-index:0;}
 #wlpage{ z-index:1; width:100%; height:100%; position:relative;}
 .nav{ position:fixed; top:0; left:50%; margin-left:-320px; width:100%; height:113px;background:url('../images/navbg.jpg') no-repeat; z-index:2; }
 .nav a{ display:block; width:210px; height:113px; float:left; text-align:center; line-height:113px; color:#fff; font-size:60px; margin-right:5px;}
@@ -68,7 +68,7 @@ animation:redsecond 5s ease infinite;
 .mp a.mptwo:active{background:url(../images/mp2a.png); margin-left:213px;}
 .mp a.mpthree{background:url(../images/mp3.png); margin-left:426px;}
 .mp a.mpthree:active{background:url(../images/mp3a.png); margin-left:426px;}
-.mainwx{ position: absolute;width:640px;height:1136px;top:50%; left:50%; background:url('../images/bg_wx.jpg') no-repeat;background-size:100%;overflow:hidden; margin-top:-568px; margin-left:-320px; z-index:0;}
+.mainwx{ position: absolute;width:640px;height:100%;top:0; left:50%; background:url('../images/bg_wx.jpg') no-repeat;overflow:hidden; margin-left:-320px; z-index:0;}
 .wxtxt{ background:url(../images/wxtxt.png); width:86px; height:179px; float:left; position:relative; margin-top:153px; left:50px;}
 .wxwrap{position:relative; top:355px; width:100%; height:420px;}
 .wxc{ width:219px; height:221px; background:url(../images/wxclick.png); position:absolute; left:220px; top:95px;}
