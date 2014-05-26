@@ -77,7 +77,7 @@ animation:redsecond 5s ease infinite;
 .mainwx{ position: absolute;width:640px;height:100%;top:0; left:50%; background:url('../images/bg_wx.jpg') no-repeat;overflow:hidden; margin-left:-320px; z-index:0;}
 .wxtxt{ background:url(../images/wxtxt.png); width:86px; height:179px; float:left; position:relative; margin-top:153px; left:50px;}
 .wxmstxt{ background:url('../images/wxms.png') no-repeat; width:416px; height:163px; float:left; position:relative; margin-top:160px; left:83px;}
-.wxwrap{position:relative; top:355px; width:100%; height:420px;}
+.wxwrap{position:relative; top:330px; width:100%; height:420px;}
 .wxc{ width:219px; height:221px; background:url(../images/wxclick.png); position:absolute; left:220px; top:95px;}
 .wxwrap span{ position:absolute;}
 .wxwrap span.rx{ width:158px; height:82px; background:url(../images/rx.png); left:70px; top:40px;}
