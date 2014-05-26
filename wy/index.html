@@ -22,46 +22,6 @@
 </head>
 <body>
 <div class="main">
-<div style="text-align:center; position:relative; top:150px; z-index:100;">
-  <button onclick="playPause()">播放/暂停</button> 
-  <button onclick="makeBig()">大</button>
-  <button onclick="makeNormal()">中</button>
-  <button onclick="makeSmall()">小</button>
-  <br /> 
-  <video id="video1" width="420" style="margin-top:15px;">
-    <source src="video/gw.mp4" type="video/mp4" />
-    <source src="http://v.nie.netease.com/yzr/2014/0220/gw.ogg" type="video/ogg" />
-    Your browser does not support HTML5 video.
-  </video>
-</div> 
-
-<script type="text/javascript">
-var myVideo=document.getElementById("video1");
-
-function playPause()
-{ 
-if (myVideo.paused) 
-  myVideo.play(); 
-else 
-  myVideo.pause(); 
-} 
-
-function makeBig()
-{ 
-myVideo.width=560; 
-} 
-
-function makeSmall()
-{ 
-myVideo.width=320; 
-} 
-
-function makeNormal()
-{ 
-myVideo.width=420; 
-} 
-</script> 
-
 <a class="wlmh" href="wl.html"></a>
 <div class="red1"></div>
 <div class="red2"></div>
