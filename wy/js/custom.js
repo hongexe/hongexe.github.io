@@ -33,11 +33,11 @@ $('.lbclose').click(function(){
 $('.poplayer').css('top','-1000px');
 $('.wxwrap span').click(function(){
 	
-		$('.poplayer').animate({top:'0',height:'53px',},200);
-		$('.poplayer').animate({top:'0',height:'470px',},700);
+		$('.poplayer').animate({top:'-100',height:'53px',},200);
+		$('.poplayer').animate({top:'-100',height:'470px',},700);
 });
 $('.popclose').click(function(){
-	$('.poplayer').animate({top:'0',height:'53px',},700);
+	$('.poplayer').animate({top:'-100',height:'53px',},700);
 	$('.poplayer').animate({top:'-1000',height:'470px',},200);
 		
 });
