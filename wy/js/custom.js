@@ -3,8 +3,9 @@
 $(document).ready(function() {
 			$('#wlpage').fullpage({
 				verticalCentered: true,
-				scrollingSpeed: 600,
-				 easing: 'linear',
+				scrollingSpeed: 700,
+				 easing: 'swing',
+
 			});
 		});
 		
@@ -15,7 +16,7 @@ $('.lbclose').css('top','5px');
 var expanded = true;
 $('.lbtitle').click(function(){
 	if (expanded) {
-		$('.layerbottom').animate({bottom:'0'},400);
+		$('.layerbottom').animate({bottom:'0'},700);
 		$('.layerbottom').animate({bottom:'-20'},600);
 		$('.lbclose').animate({top:'-52'},700);
 
