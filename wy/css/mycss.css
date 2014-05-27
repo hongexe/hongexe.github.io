@@ -60,14 +60,14 @@ width:35px; height:39px;background:url('../images/updown.png') no-repeat; margin
 .lbtitle{background:url('../images/layerbottom.jpg') no-repeat; width:630px; height:84px; position:relative; margin:0 auto; top:5px;}
 .lbcontent{ font-size:40px; color:#fff; padding-top:60px; padding-left:80px;}
 .gotoup{ 
-width:28px; height:63px; background:url('../images/up.png') no-repeat; position:absolute; left:305px; top:130px; z-index:2; display:none;
+width:28px; height:63px; background:url('../images/up.png') no-repeat; position:absolute; left:50%; margin-left:-14px; top:130px; z-index:2; display:none;
 animation:updown 0.5s infinite alternate;
 -moz-animation:updown 0.5s infinite alternate;
 -webkit-animation:updown 0.5s infinite alternate;
 -o-animation:updown 0.5s infinite alternate;
 }
 .gotodown{ 
-width:28px; height:63px; background:url('../images/down.png') no-repeat; position:absolute; left:305px; bottom:145px; z-index:2;
+width:28px; height:63px; background:url('../images/down.png') no-repeat; position:absolute; left:50%; margin-left:-14px; bottom:145px; z-index:2;
 animation:godown 0.5s infinite alternate;
 -moz-animation:godown 0.5s infinite alternate;
 -webkit-animation:godown 0.5s infinite alternate;
