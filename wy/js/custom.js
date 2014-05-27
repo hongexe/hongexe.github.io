@@ -5,7 +5,15 @@ $(document).ready(function() {
 				verticalCentered: true,
 				scrollingSpeed: 700,
 				 easing: 'swing',
-
+				 afterLoad: function(anchorLink, index){
+            if(index == '1'){
+                $(".gotoup").css("display","none");
+				$(".gotodown").css("display","inline");
+            } else if(index == '2'){
+				$(".gotoup").css("display","inline");
+				$(".gotodown").css("display","none");
+				}
+        }
 
 			});
 		});
