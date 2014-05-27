@@ -53,14 +53,19 @@ $('.lbclose').click(function(){
 $('.poplayer').css({top:'-1000',opacity:'0'});
 $('.wxwrap span').click(function(){
 	
-		$('.poplayer').animate({top:'-100',opacity:'0.5',},500);
+		$('.poplayer').animate({top:'-80',opacity:'0.5',},500);
 		$('.poplayer').animate({top:'-100',opacity:'1',},500);
 });
 $('.popclose').click(function(){
-	$('.poplayer').animate({top:'-100',opacity:'0.5',},500);
+	$('.poplayer').animate({top:'-80',opacity:'0.5',},500);
 	$('.poplayer').animate({top:'-1000',opacity:'0',},500);
 		
 });
 });
 		
-		
+
+var myVideo=document.getElementById("video1");
+function play()
+{ 
+  myVideo.play(); 
+} 

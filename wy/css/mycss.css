@@ -121,19 +121,19 @@ animation:godown 0.5s infinite alternate;
 100% {right:640px; top:1136px;}
 }
 
-@-moz-keyframes redfirst /* Firefox */
+@-moz-keyframes redfirst 
 {
 0%   {right:-301px; top:-256px;}
 100% {right:640px; top:1136px;}
 }
 
-@-webkit-keyframes redfirst /* Safari and Chrome */
+@-webkit-keyframes redfirst 
 {
 0%   {right:-301px; top:-256px;}
 100% {right:640px; top:1136px;}
 }
 
-@-o-keyframes redfirst /* Opera */
+@-o-keyframes redfirst 
 {
 0%   {right:-301px; top:-256px;}
 100% {right:640px; top:1136px;}
@@ -145,19 +145,19 @@ animation:godown 0.5s infinite alternate;
 100% {right:640px; top:900px;}
 }
 
-@-moz-keyframes redsecond /* Firefox */
+@-moz-keyframes redsecond 
 {
 0%   {right:-301px; top:-256px;}
 100% {right:640px; top:900px;}
 }
 
-@-webkit-keyframes redsecond /* Safari and Chrome */
+@-webkit-keyframes redsecond 
 {
 0%   {right:50px; top:-256px;}
 100% {right:640px; top:900px;}
 }
 
-@-o-keyframes redsecond /* Opera */
+@-o-keyframes redsecond 
 {
 0%   {right:-301px; top:-256px;}
 100% {right:640px; top:900px;}
@@ -170,19 +170,19 @@ animation:godown 0.5s infinite alternate;
 100% {top:110px;}
 }
 
-@-moz-keyframes updown /* Firefox */
+@-moz-keyframes updown
 {
 0%   {top:130px;}
 100% {top:110px;}
 }
 
-@-webkit-keyframes updown /* Safari and Chrome */
+@-webkit-keyframes updown 
 {
 0%   {top:130px;}
 100% {top:110px;}
 }
 
-@-o-keyframes updown /* Opera */
+@-o-keyframes updown 
 {
 0%   {top:130px;}
 100% {top:110px;}
@@ -194,19 +194,19 @@ animation:godown 0.5s infinite alternate;
 100% {bottom:165px;}
 }
 
-@-moz-keyframes godown /* Firefox */
+@-moz-keyframes godown 
 {
 0%   {bottom:145px;}
 100% {bottom:165px;}
 }
 
-@-webkit-keyframes godown /* Safari and Chrome */
+@-webkit-keyframes godown
 {
 0%   {bottom:145px;}
 100% {bottom:165px;}
 }
 
-@-o-keyframes godown /* Opera */
+@-o-keyframes godown 
 {
 0%   {bottom:145px;}
 100% {bottom:165px;}
