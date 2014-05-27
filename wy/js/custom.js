@@ -9,9 +9,15 @@ $(document).ready(function() {
             if(index == '1'){
                 $(".gotoup").css("display","none");
 				$(".gotodown").css("display","inline");
+				$(".gotodown").click(function(){
+					$.fn.fullpage.moveTo(2,0); 
+					});				
             } else if(index == '2'){
 				$(".gotoup").css("display","inline");
 				$(".gotodown").css("display","none");
+				$(".gotoup").click(function(){
+					$.fn.fullpage.moveTo(1,0); 
+					});	
 				}
         }
 
@@ -63,6 +69,33 @@ $('.popclose').click(function(){
 });
 });
 		
+$('.android').click(function(){
+	$(".android").css("background-position","80px 0");
+	$(".apple").css("background-position","0 0");
+	$(".applefake").css("background-position","0 0");
+	$(".other").css("background-position","0 0");
+});
+$('.apple').click(function(){
+	$(".android").css("background-position","0 0");
+	$(".apple").css("background-position","80px 0");
+	$(".applefake").css("background-position","0 0");
+	$(".other").css("background-position","0 0");
+});
+$('.applefake').click(function(){
+	$(".android").css("background-position","0 0");
+	$(".apple").css("background-position","0 0");
+	$(".applefake").css("background-position","80px 0");
+	$(".other").css("background-position","0 0");
+});
+$('.other').click(function(){
+	$(".android").css("background-position","0 0");
+	$(".apple").css("background-position","0 0");
+	$(".applefake").css("background-position","0 0");
+	$(".other").css("background-position","109px 0");
+});
+
+
+
 
 var myVideo=document.getElementById("video1");
 function play()

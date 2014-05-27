@@ -59,6 +59,16 @@ animation:redsecond 5s ease infinite;
 width:35px; height:39px;background:url('../images/updown.png') no-repeat; margin:0 auto; }
 .lbtitle{background:url('../images/layerbottom.jpg') no-repeat; width:630px; height:84px; position:relative; margin:0 auto; top:5px;}
 .lbcontent{ font-size:40px; color:#fff; padding-top:60px; padding-left:80px;}
+.lbtype{ height:170px; width:540px; position:relative;}
+.lbtype a{ display:block; float:left; width:80px; height:93px; margin-right:45px;}
+.lbtype a.android{ background:url(../images/andriod.png);}
+.lbtype a.androidclick, .lbtype a.android:active{ background:url(../images/andriod.png);background-position:80px 0; }
+.lbtype a.apple{ background:url(../images/apple.png);}
+.lbtype a.appleclick, .lbtype a.apple:active{ background:url(../images/apple.png);background-position:80px 0; }
+.lbtype a.applefake{ background:url(../images/applefake.png);}
+.lbtype a.applefakeclick, .lbtype a.applefake:active{ background:url(../images/applefake.png);background-position:80px 0; }
+.lbtype a.other{ background:url(../images/other.png); width:109px;}
+.lbtype a.otherclick, .lbtype a.other:active{ background:url(../images/other.png);background-position:109px 0; width:109px;}
 .gotoup{ 
 width:28px; height:63px; background:url('../images/up.png') no-repeat; position:absolute; left:50%; margin-left:-14px; top:130px; z-index:2; display:none;
 animation:updown 0.5s infinite alternate;
@@ -105,11 +115,11 @@ animation:godown 0.5s infinite alternate;
 .wxlp{ width:100%; position:relative; top:370px;}
 .wxlp a{ width:180px; height:419px; position:absolute;}
 .wxlp a.lpone{background-image: url(../images/wxfkl.png); left:34px;}
-.wxlp a.lpone:active{background-image: url(../images/wxfkla.png);}
+.wxlp a.lpone:active{ background-position:180px 0;}
 .wxlp a.lptwo{background-image: url(../images/wxljl.png); left:233px;}
-.wxlp a.lptwo:active{background-image: url(../images/wxljla.png);}
+.wxlp a.lptwo:active{background-position:180px 0;}
 .wxlp a.lpthree{background-image: url(../images/wxsyl.png); left:433px;}
-.wxlp a.lpthree:active{background-image: url(../images/wxsyla.png);}
+.wxlp a.lpthree:active{background-position:180px 0;}
 .poplayer{ width:580px; height:470px; position:absolute; top:-1000px; left:50%; margin-left:-290px;}
 .poplayer .popcontent{ width:470px; height:310px; position:absolute; bottom:0; background-color:#d1bc96; padding:55px;  }
 .poplayer .popcontent span{ position:relative; top:50px;}
