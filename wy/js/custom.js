@@ -6,6 +6,7 @@ $(document).ready(function() {
 				scrollingSpeed: 700,
 				 easing: 'swing',
 
+
 			});
 		});
 		
