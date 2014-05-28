@@ -125,6 +125,9 @@ animation:godown 0.5s infinite alternate;
 .poplayer .popcontent span{ position:relative; top:50px;}
 .poplayer .popclose{ width:115px; height:53px;background-image: url(../images/popclose.png); margin:0 auto;}
 
+.mainmf{ position: absolute;width:640px;height:100%;top:0; left:50%; background:url('../images/bg_mf.jpg') no-repeat;overflow:hidden; margin-left:-320px; z-index:0;}
+.mftxt{ background:url(../images/mftxt.png); width:119px; height:181px; float:left; position:relative; margin-top:153px; left:30px;}
+.mfmstxt{ background:url('../images/mfms.png') no-repeat; width:416px; height:155px; float:left; position:relative; margin-top:160px; left:75px;}
 @keyframes redfirst
 {
 0%   {right:-301px; top:-256px;}
