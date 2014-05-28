@@ -1,8 +1,8 @@
-var shareTitle = 'TIME TO GOAL！';
-var shareTxt = '#Game NOver#2000+真实球星官方授权，顶级游戏名厂血统，震撼3D比赛画面，想尝鲜感受么？名将神锋等你驾驭！TIME TO GOAL！';
-var shareTxt2 = '#Game NOver#2000+真实球星官方授权，顶级游戏名厂血统，震撼3D比赛画面，想尝鲜感受么？名将神锋等你驾驭！TIME TO GOAL！';
-var shareUrl = 'http://wscs.163.com/';
-var sharePic = 'http://wscs.163.com/share/0426/share3.png';
+var shareTitle = '';
+var shareTxt = '';
+var shareTxt2 = '';
+var shareUrl = '';
+var sharePic = '';
 var winObj = $(window);
 
 function validPhone(num) {

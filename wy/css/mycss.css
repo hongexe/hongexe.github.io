@@ -52,7 +52,7 @@ animation:redsecond 5s ease infinite;
 .nav a.wlclick, .nav a.wl:active{background-position:0 0;}
 .nav a.wxclick, .nav a.wx:active{background-position:0 -113px;;}
 .nav a.mfclick, .nav a.mf:active{background-position:0 -226px;}
-.layerbottom{ position:fixed; bottom:0;left:50%; margin-left:-320px; width:640px; height:760px;z-index:2; background-color:#95805b; }
+.layerbottom{ position:fixed; bottom:-666px;left:50%; margin-left:-320px; width:640px; height:760px;z-index:2; background-color:#95805b; }
 .lbclose{ width:113px; height:47px;background:url('../images/close.png') no-repeat; position:absolute; left:50%; margin-left:-56px; top:-52px; z-index:-1; padding-top:10px;}
 .updown{ 
 width:35px; height:39px;background:url('../images/updown.png') no-repeat; margin:0 auto; }
