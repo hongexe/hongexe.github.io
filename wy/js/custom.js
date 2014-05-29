@@ -94,6 +94,22 @@ $('.other').click(function(){
 	$(".other").css("background-position","109px 0");
 });
 
+/*$('.myone').click(function(){
+	$(".myone").css("background-image","url(../images/my1a.png)");
+	$(".mytwo").css("background-image","url(../images/my2.png)");
+	$(".mythree").css("background-image","url(../images/my3.png)");
+});
+$('.mytwo').click(function(){
+	$(".myone").css("background-image","url(../images/my1.png) no-repeat");
+	$(".mytwo").css("background-image","url(../images/my2a.png) no-repeat");
+	$(".mythree").css("background-image","url(../images/my3.png) no-repeat");
+});
+$('.mythree').click(function(){
+	$(".myone").css("background-image","url(../images/my1.png) no-repeat");
+	$(".mytwo").css("background-image","url(../images/my2.png) no-repeat");
+	$(".mythree").css("background-image","url(../images/my3a.png) no-repeat");
+});
+*/
 
 
 
