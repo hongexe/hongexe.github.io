@@ -94,22 +94,22 @@ $('.other').click(function(){
 	$(".other").css("background-position","109px 0");
 });
 
-/*$('.myone').click(function(){
-	$(".myone").css("background-image","url(../images/my1a.png)");
-	$(".mytwo").css("background-image","url(../images/my2.png)");
-	$(".mythree").css("background-image","url(../images/my3.png)");
+$('.myone').click(function(){
+	$(".myone").css("background-position","-200px 0");
+	$(".mytwo").css("background-position","0 -191px");
+	$(".mythree").css("background-position","0 -382px");
 });
 $('.mytwo').click(function(){
-	$(".myone").css("background-image","url(../images/my1.png) no-repeat");
-	$(".mytwo").css("background-image","url(../images/my2a.png) no-repeat");
-	$(".mythree").css("background-image","url(../images/my3.png) no-repeat");
+	$(".myone").css("background-position","0 0");
+	$(".mytwo").css("background-position","-200px -191px");
+	$(".mythree").css("background-position","0 -382px");
 });
 $('.mythree').click(function(){
-	$(".myone").css("background-image","url(../images/my1.png) no-repeat");
-	$(".mytwo").css("background-image","url(../images/my2.png) no-repeat");
-	$(".mythree").css("background-image","url(../images/my3a.png) no-repeat");
+	$(".myone").css("background-position","0 0");
+	$(".mytwo").css("background-position","0 -191px");
+	$(".mythree").css("background-position","-200px -382px");
 });
-*/
+
 
 
 

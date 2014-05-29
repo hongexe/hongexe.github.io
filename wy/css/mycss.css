@@ -128,13 +128,13 @@ animation:godown 0.5s infinite alternate;
 .mftxt{ background:url(../images/mftxt.png); width:119px; height:181px; float:left; position:relative; margin-top:153px; left:30px;}
 .mfmstxt{ background:url('../images/mfms.png') no-repeat; width:416px; height:155px; float:left; position:relative; margin-top:160px; left:75px;}
 .my{ height:220px;}
-.my a{ display:block; float:left; width:200px; height:191px; margin-top:20px; background-repeat:no-repeat}
-.my a.myone{ background-image:url(../images/my1.png); margin-left:20px;}
-.my a.myone:active{ background-image:url(../images/my1a.png); margin-left:20px;}
-.my a.mytwo{ background-image:url(../images/my2.png);}
-.my a.mytwo:active{ background-image:url(../images/my2a.png);}
-.my a.mythree{ background-image:url(../images/my3.png);}
-.my a.mythree:active{ background-image:url(../images/my3a.png);}
+.my a{ display:block; float:left; width:200px; height:191px; margin-top:20px; background:url(../images/my.png) no-repeat;}
+.my a.myone{ background-position:0 0; margin-left:20px;}
+.my a.myone:active{background-position:-200px 0;  margin-left:20px;}
+.my a.mytwo{ background-position:0 -191px;}
+.my a.mytwo:active{ background-position:-200px -191px;}
+.my a.mythree{ background-position:0 -382px;}
+.my a.mythree:active{ background-position:-200px -382px;}
 .mytxt{ position:relative; left:50%;margin-left:-250px;}
 #myCanvas{ position:absolute; left:50%; margin-left:-227px; margin-top:50px;}
 
