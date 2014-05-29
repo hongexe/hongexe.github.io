@@ -2,10 +2,9 @@
 
 $(document).ready(function() {
 			$('#wlpage').fullpage({
-				verticalCentered: true,
-				scrollingSpeed: 700,
-				 easing: 'swing',
-				 afterLoad: function(anchorLink, index){
+				'verticalCentered': true,
+				'easing': 'swing',
+				 'afterLoad': function(anchorLink, index){
             if(index == '1'){
                 $(".gotoup").css("display","none");
 				$(".gotodown").css("display","inline");
