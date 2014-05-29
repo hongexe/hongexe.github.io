@@ -98,7 +98,6 @@ $('.other').click(function(){
 
 
 
-
 var myVideo=document.getElementById("video1");
 function play()
 { 
