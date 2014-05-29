@@ -94,6 +94,7 @@ $('.other').click(function(){
 	$(".other").css("background-position","109px 0");
 });
 
+$(".myone").css("background-position","-200px 0");
 $('.myone').click(function(){
 	$(".myone").css("background-position","-200px 0");
 	$(".mytwo").css("background-position","0 -191px");
