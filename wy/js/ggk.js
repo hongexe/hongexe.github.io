@@ -64,5 +64,25 @@
             canvas.addEventListener('mouseup', eventUp);
             canvas.addEventListener('mousemove', eventMove);
         });
-        img.src = 'images/prize.jpg';
+img.src = 'images/prize.jpg';
+$(".myone").css("background-position","-200px 0");
+$('.myone').click(function(){
+	$(".myone").css("background-position","-200px 0");
+	$(".mytwo").css("background-position","0 -191px");
+	$(".mythree").css("background-position","0 -382px");
+	img.src = 'images/prize.jpg';
+});
+$('.mytwo').click(function(){
+	$(".myone").css("background-position","0 0");
+	$(".mytwo").css("background-position","-200px -191px");
+	$(".mythree").css("background-position","0 -382px");
+	img.src = 'images/prize2.jpg';
+});
+$('.mythree').click(function(){
+	$(".myone").css("background-position","0 0");
+	$(".mytwo").css("background-position","0 -191px");
+	$(".mythree").css("background-position","-200px -382px");
+	img.src = 'images/prize3.jpg';
+});
+        
     })(document.body.style);

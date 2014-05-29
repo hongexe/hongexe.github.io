@@ -94,22 +94,7 @@ $('.other').click(function(){
 	$(".other").css("background-position","109px 0");
 });
 
-$(".myone").css("background-position","-200px 0");
-$('.myone').click(function(){
-	$(".myone").css("background-position","-200px 0");
-	$(".mytwo").css("background-position","0 -191px");
-	$(".mythree").css("background-position","0 -382px");
-});
-$('.mytwo').click(function(){
-	$(".myone").css("background-position","0 0");
-	$(".mytwo").css("background-position","-200px -191px");
-	$(".mythree").css("background-position","0 -382px");
-});
-$('.mythree').click(function(){
-	$(".myone").css("background-position","0 0");
-	$(".mytwo").css("background-position","0 -191px");
-	$(".mythree").css("background-position","-200px -382px");
-});
+
 
 
 
