@@ -104,13 +104,14 @@ animation:godown 0.5s infinite alternate;
 .wxmstxt{ background:url('../images/wxms.png') no-repeat; width:416px; height:163px; float:left; position:relative; margin-top:160px; left:83px;}
 .wxwrap{position:relative; top:330px; width:100%; height:420px;}
 .wxc{ width:219px; height:221px; background:url(../images/wxclick.png); position:absolute; left:220px; top:95px;}
-.wxwrap span{ position:absolute;}
-.wxwrap span.rx{ width:158px; height:82px; background:url(../images/rx.png); left:70px; top:40px;}
-.wxwrap span.jq{ width:118px; height:61px; background:url(../images/jq.png); left:45px; top:185px;}
-.wxwrap span.bf{ width:198px; height:92px; background:url(../images/bf.png); left:85px; top:350px;}
-.wxwrap span.jx{ width:168px; height:82px; background:url(../images/jx.png); right:50px; top:0px;}
-.wxwrap span.ll{ width:118px; height:61px; background:url(../images/ll.png); right:55px; top:170px;}
-.wxwrap span.nl{ width:158px; height:82px; background:url(../images/nl.png); right:45px; top:320px;}
+.rx, .jq, .bf, .jx, .ll, .nl{ position:absolute;}
+.wxwrap div span.select{ position:absolute; top:0; left:0; display:none; background:url(../images/select.png); width:27px; height:27px;}
+.wxwrap div.rx{ width:168px; height:92px; background:url(../images/rx.png) right bottom no-repeat; left:70px; top:40px;}
+.wxwrap div.jq{ width:128px; height:71px; background:url(../images/jq.png) right bottom no-repeat; left:45px; top:185px;}
+.wxwrap div.bf{ width:208px; height:102px; background:url(../images/bf.png) right bottom no-repeat; left:85px; top:350px;}
+.wxwrap div.jx{ width:178px; height:92px; background:url(../images/jx.png) right bottom no-repeat; right:50px; top:0px;}
+.wxwrap div.ll{ width:130px; height:71px; background:url(../images/ll.png) right bottom no-repeat; right:55px; top:170px;}
+.wxwrap div.nl{ width:168px; height:92px; background:url(../images/nl.png) right bottom no-repeat; right:45px; top:320px;}
 .wxlp{ width:100%; position:relative; top:370px;}
 .wxlp a{ width:180px; height:419px; position:absolute;}
 .wxlp a.lpone{background-image: url(../images/wxfkl.png); left:34px;}
@@ -119,9 +120,9 @@ animation:godown 0.5s infinite alternate;
 .wxlp a.lptwo:active{background-position:180px 0;}
 .wxlp a.lpthree{background-image: url(../images/wxsyl.png); left:433px;}
 .wxlp a.lpthree:active{background-position:180px 0;}
-.poplayer{ width:580px; height:470px; position:absolute; top:-1000px; left:50%; margin-left:-290px;}
+.poplayer{ width:580px; height:470px; position:absolute; top:-1000px; left:50%; margin-left:-290px; z-index:10;}
 .poplayer .popcontent{ width:470px; height:310px; position:absolute; bottom:0; background-color:#d1bc96; padding:55px;  }
-.poplayer .popcontent span{ position:relative; top:50px;}
+.poplayer .popcontent span{ position:relative; top:50px; font-size:45px; line-height:72px; color:#9c3829;}
 .poplayer .popclose{ width:115px; height:53px;background-image: url(../images/popclose.png); margin:0 auto;}
 
 .mainmf{ position: absolute;width:640px;height:100%;top:0; left:50%; background:url('../images/bg_mf.jpg') no-repeat;overflow:hidden; margin-left:-320px; z-index:0;}
@@ -130,13 +131,10 @@ animation:godown 0.5s infinite alternate;
 .my{ height:220px;}
 .my a{ display:block; float:left; width:200px; height:191px; margin-top:20px; background:url(../images/my.png) no-repeat;}
 .my a.myone{ background-position:0 0; margin-left:20px;}
-.my a.myone:active{background-position:-200px 0;  margin-left:20px;}
 .my a.mytwo{ background-position:0 -191px;}
-.my a.mytwo:active{ background-position:-200px -191px;}
 .my a.mythree{ background-position:0 -382px;}
-.my a.mythree:active{ background-position:-200px -382px;}
 .mytxt{ position:relative; left:50%;margin-left:-250px;}
-#myCanvas{ position:absolute; left:50%; margin-left:-227px; margin-top:50px;}
+#myCanvas{ position:absolute; left:50%; margin-left:-227px; margin-top:50px;width:454px; height:193px; background:url(../images/prize.jpg) no-repeat;}
 
 @keyframes redfirst
 {

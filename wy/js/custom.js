@@ -52,19 +52,36 @@ $('.lbclose').click(function(){
 	expanded = !expanded;
 });
 
-
-
-
-$('.poplayer').css({top:'-1000',opacity:'0'});
-$('.wxwrap span').click(function(){
-	
-		$('.poplayer').animate({top:'-80',opacity:'0.5',},500);
-		$('.poplayer').animate({top:'-100',opacity:'1',},500);
-});
-$('.popclose').click(function(){
-	$('.poplayer').animate({top:'-80',opacity:'0.5',},500);
+//弹层打开
+function openPop(popID){
+	$(popID).animate({top:'240',opacity:'0.5',},500);
+	$(popID).animate({top:'220',opacity:'1',},500);
+}
+//弹层关闭
+function closePop(){
+	$('.poplayer').animate({top:'240',opacity:'0.5',},500);
 	$('.poplayer').animate({top:'-1000',opacity:'0',},500);
-		
+}
+$('.poplayer').css({top:'-1000',opacity:'0'});
+
+$('.rx, .jq, .bf, .jx, .ll, .nl').click(function(){
+	openPop('.poplayer');
+});
+$('.rx').mousedown(function(){
+	    $('.jq span.select, .bf span.select, .jx span.select, .ll span.select, .nl span.select').fadeOut();
+		$('.rx span.select').fadeIn();
+		$(".popcontent span").text("阁下还未参透这“武学”的至高境界，何不再三思三思？");
+});
+$('.jq, .bf, .jx, .ll, .nl').mousedown(function(){
+		$('.rx span.select, .jq span.select, .bf span.select, .jx span.select, .ll span.select, .nl span.select').fadeOut();
+		$(this).children('span.select').fadeIn();
+		$(".popcontent span").text("阁下还未参透这“武学”的至高境界，何不再三思三思？");
+});
+
+
+
+$('.popclose').click(function(){
+	closePop();
 });
 });
 		
@@ -95,7 +112,50 @@ $('.other').click(function(){
 
 
 
+var delswip = true; 
+$('.myone').click(function(){
+	if(delswip){
+	$(".myone").css("background-position","-200px 0");
+	$(".mytwo").css("background-position","-400px -191px");
+	$(".mythree").css("background-position","-400px -382px");
+	$("#myCanvas").css({"background-position":"0 0"});
+	delswip = false;
+	}
+});
+$('.mytwo').click(function(){
+	if(delswip){
+	$(".myone").css("background-position","-400px 0");
+	$(".mytwo").css("background-position","-200px -191px");
+	$(".mythree").css("background-position","-400px -382px");
+	$("#myCanvas").css({"background-position":"0 -193px"});
+	delswip = false;
+	}
+});
+$('.mythree').click(function(){
+	if(delswip){
+	$(".myone").css("background-position","-400px 0");
+	$(".mytwo").css("background-position","-400px -191px");
+	$(".mythree").css("background-position","-200px -382px");
+	$("#myCanvas").css({"background-position":"0 -386px"});
+	delswip = false;
+	}
+});
 
+$('#myCanvas').wScratchPad({
+          fg: '#850b0b',
+		  size: 25,
+		  scratchDown: function(){
+			  if(delswip){
+				  alert("请选择以上秘药！")
+				  this.reset();
+				  }
+			  },
+          scratchMove: function (e, percent) {
+            if (percent > 70) {
+              this.clear();
+            }
+          },
+        });
 
 var myVideo=document.getElementById("video1");
 function play()

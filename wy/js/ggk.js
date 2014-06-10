@@ -65,24 +65,33 @@
             canvas.addEventListener('mousemove', eventMove);
         });
 img.src = 'images/prize.jpg';
-$(".myone").css("background-position","-200px 0");
+var delswip = true; 
 $('.myone').click(function(){
+	if(delswip){
 	$(".myone").css("background-position","-200px 0");
-	$(".mytwo").css("background-position","0 -191px");
-	$(".mythree").css("background-position","0 -382px");
+	$(".mytwo").css("background-position","-400px -191px");
+	$(".mythree").css("background-position","-400px -382px");
 	img.src = 'images/prize.jpg';
+	delswip = false;
+	}
 });
 $('.mytwo').click(function(){
-	$(".myone").css("background-position","0 0");
+	if(delswip){
+	$(".myone").css("background-position","-400px 0");
 	$(".mytwo").css("background-position","-200px -191px");
-	$(".mythree").css("background-position","0 -382px");
+	$(".mythree").css("background-position","-400px -382px");
 	img.src = 'images/prize2.jpg';
+	delswip = false;
+	}
 });
 $('.mythree').click(function(){
-	$(".myone").css("background-position","0 0");
-	$(".mytwo").css("background-position","0 -191px");
+	if(delswip){
+	$(".myone").css("background-position","-400px 0");
+	$(".mytwo").css("background-position","-400px -191px");
 	$(".mythree").css("background-position","-200px -382px");
 	img.src = 'images/prize3.jpg';
+	delswip = false;
+	}
 });
         
     })(document.body.style);

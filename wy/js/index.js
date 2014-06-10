@@ -25,7 +25,7 @@ $(function(){
 		var pnum = $("#phone").val();
 
 		if(!validPhone(pnum)){
-			alert('请输入正确的手机号');
+			alert('请输入正确的手机号！');
 		}else{
 			collectPho("pes",pnum,window.location.href);
 		}
