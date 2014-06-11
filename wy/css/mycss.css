@@ -8,7 +8,7 @@ body, html {background:#0e0e0e;text-align: left;height: 100%;width: 100%;font-fa
 body{height:100%;}
 .section{ width:640px; margin:0 auto;}
 .main{ position:relative;width:640px;height:1136px;left:0;top:0;background:url('../images/bg.jpg') no-repeat;background-size:100%;overflow:hidden; margin:0 auto;}
-.wlmh{ width:378px; height:719px; background:url('../images/wlmh.jpg') no-repeat; position:absolute; top:50%; left:50%; margin:-360px 0 0 -189px;}
+.wlmh{ width:378px; height:719px; background:url('../images/wlmh.jpg') no-repeat; position:absolute; top:110px; left:50%; margin-left:-189px;}
 .red1{
 width:301px;
 height:256px;
