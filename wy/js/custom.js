@@ -74,27 +74,27 @@ $('.jq, .bf, .jx, .ll, .nl').mousedown(function(){
 
 $('.mpone').click(function(){
 	openPop('.poplayer');
-	$(".popcontent span").text("组织组织");
+	$(".popcontent span").text("“组织”，如其名般纯粹而神秘，贯彻严明的制度和隐蔽的行事，执行各种江湖委托为武林施加无形的压力。");
 });
 $('.mptwo').click(function(){
 	openPop('.poplayer');
-	$(".popcontent span").text("蜃楼");
+	$(".popcontent span").text("“蜃楼”，隐藏在南武林迷雾中的神秘组织，远离江湖，掌握高深莫测的机关遁甲之术，总部为一只空中巨船。");
 });
 $('.mpthree').click(function(){
 	openPop('.poplayer');
-	$(".popcontent span").text("影");
+	$(".popcontent span").text("“影”，来自西域的杀人组织，成员来自各种门派弃徒和武林逃犯，为挑起江湖纷争而肆意杀戮。");
 });
 $('.pone').click(function(){
 	openPop('.poplayer');
-	$(".popcontent span").text("轻羽");
+	$(".popcontent span").text("“轻羽”，远程型职业，招式潇洒优雅，剑气流光间制霸全屏。");
 });
 $('.ptwo').click(function(){
 	openPop('.poplayer');
-	$(".popcontent span").text("绝影");
+	$(".popcontent span").text("“绝影”，刺客型职业，身影飘忽不定，动作奇快，大范围杀伤。");
 });
 $('.pthree').click(function(){
 	openPop('.poplayer');
-	$(".popcontent span").text("炙刃");
+	$(".popcontent span").text("“炽刃”，暴力型职业，刀招沉猛，以强有力的刀气斩杀敌人。");
 });
 
 
@@ -104,81 +104,8 @@ $('.popclose').click(function(){
 });
 
 		
-$('.android').click(function(){
-	$(".android").css("background-position","80px 0");
-	$(".apple").css("background-position","0 0");
-	$(".applefake").css("background-position","0 0");
-	$(".other").css("background-position","0 0");
-});
-$('.apple').click(function(){
-	$(".android").css("background-position","0 0");
-	$(".apple").css("background-position","80px 0");
-	$(".applefake").css("background-position","0 0");
-	$(".other").css("background-position","0 0");
-});
-$('.applefake').click(function(){
-	$(".android").css("background-position","0 0");
-	$(".apple").css("background-position","0 0");
-	$(".applefake").css("background-position","80px 0");
-	$(".other").css("background-position","0 0");
-});
-$('.other').click(function(){
-	$(".android").css("background-position","0 0");
-	$(".apple").css("background-position","0 0");
-	$(".applefake").css("background-position","0 0");
-	$(".other").css("background-position","109px 0");
-});
 
 
 
-var delswip = true; 
-$('.myone').click(function(){
-	if(delswip){
-	$(".myone").css("background-position","-200px 0");
-	$(".mytwo").css("background-position","-400px -191px");
-	$(".mythree").css("background-position","-400px -382px");
-	$("#myCanvas").css({"background-position":"0 0"});
-	delswip = false;
-	}
-});
-$('.mytwo').click(function(){
-	if(delswip){
-	$(".myone").css("background-position","-400px 0");
-	$(".mytwo").css("background-position","-200px -191px");
-	$(".mythree").css("background-position","-400px -382px");
-	$("#myCanvas").css({"background-position":"0 -193px"});
-	delswip = false;
-	}
-});
-$('.mythree').click(function(){
-	if(delswip){
-	$(".myone").css("background-position","-400px 0");
-	$(".mytwo").css("background-position","-400px -191px");
-	$(".mythree").css("background-position","-200px -382px");
-	$("#myCanvas").css({"background-position":"0 -386px"});
-	delswip = false;
-	}
-});
 
-$('#myCanvas').wScratchPad({
-          fg: '#850b0b',
-		  size: 25,
-		  scratchDown: function(){
-			  if(delswip){
-				  alert("少侠，请选择以上秘药！")
-				  this.reset();
-				  }
-			  },
-          scratchMove: function (e, percent) {
-            if (percent > 70 && percent!=100) {
-              this.clear();
-			  $(".share").fadeIn();
-			  $(".overlayer").fadeIn();
-            }
-          }
-        });
-		
-$('.overlayer').click(function(){
-	$(".share").fadeOut();
-	$(".overlayer").fadeOut();
-});
+

@@ -1,8 +1,8 @@
-var shareTitle = '';
-var shareTxt = '';
-var shareTxt2 = '';
-var shareUrl = '';
-var sharePic = '';
+var shareTitle = 'TIME TO GOAL！';
+var shareTxt = '#Game NOver#2000+真实球星官方授权，顶级游戏名厂血统，震撼3D比赛画面，想尝鲜感受么？名将神锋等你驾驭！TIME TO GOAL！';
+var shareTxt2 = '#Game NOver#2000+真实球星官方授权，顶级游戏名厂血统，震撼3D比赛画面，想尝鲜感受么？名将神锋等你驾驭！TIME TO GOAL！';
+var shareUrl = 'http://wscs.163.com/';
+var sharePic = 'http://wscs.163.com/share/0426/share3.png';
 var winObj = $(window);
 
 function validPhone(num) {
@@ -16,40 +16,72 @@ function rand(num) {
    return Math.floor(Math.random()*num)+1;
 }
 $(function(){
-	var wh = winObj.height();
-	if(wh<930) {
-		$(document).scrollTop(930-wh);
-	}
-	$('body').css({'opacity':1});
-	$('#submit').click(function(){
-		var pnum = $("#phone").val();
 
-		if(!validPhone(pnum)){
-			alert('请输入正确的手机号！');
-		}else{
-			collectPho("pes",pnum,window.location.href);
-		}
-	});
 
-	function collectPho(game_name,phone,src){
-		var os = 'ios';
-		if(/android/i.test(navigator.userAgent.toLowerCase())){
-			os = 'android';
-		}
-		$.ajax({
-			url:"http://mobile-game-appoint.webapp.163.com/appoint/"+game_name+"/"+phone+"/"+os+"/",
-			async: false,
-			dataType:"jsonp",
-			success:function(result){
-				if(result.status == "ok"){
-					alert('恭喜您预约成功！');
-				}else{
-					alert(result.status);
-				}
-			}
-		});
-		$('body').append("<ifr"+"ame  src=\"http://gad.netease.com/gad/point?point_id=1476&s=FnvXie%2FGEYL6aTQ%2BJJNWEPzSWCk%3D&cache="+rand(999999)+"&urs="+phone+"\" width=\"0\" height=\"0\" style=\"border:0px\"><\/ifr"+"ame>");
+
+var delswip = true; 
+$('.myone').click(function(){
+	if(delswip){
+	$(".myone").css("background-position","-200px 0");
+	$(".mytwo").css("background-position","-400px -191px");
+	$(".mythree").css("background-position","-400px -382px");
+	$("#myCanvas").css({"background-position":"0 0"});
+	delswip = false;
+	shareTxt ='神僧测我身手敏捷宜使快剑，将化身"轻羽"在灵游街等你一战，可敢来？';
+	shareTxt2 ='神僧测我身手敏捷宜使快剑，将化身"轻羽"在灵游街等你一战，可敢来？';
+	
 	}
+});
+$('.mytwo').click(function(){
+	if(delswip){
+	$(".myone").css("background-position","-400px 0");
+	$(".mytwo").css("background-position","-200px -191px");
+	$(".mythree").css("background-position","-400px -382px");
+	$("#myCanvas").css({"background-position":"0 -193px"});
+	delswip = false;
+	shareTxt ='神僧测我体态轻盈宜修轻功，将化身"绝影"在灵游街等你一战，可敢来？';
+	shareTxt2 ='神僧测我体态轻盈宜修轻功，将化身"绝影"在灵游街等你一战，可敢来？';
+	}
+});
+$('.mythree').click(function(){
+	if(delswip){
+	$(".myone").css("background-position","-400px 0");
+	$(".mytwo").css("background-position","-400px -191px");
+	$(".mythree").css("background-position","-200px -382px");
+	$("#myCanvas").css({"background-position":"0 -386px"});
+	delswip = false;
+	shareTxt ='神僧测我臂膀矫健宜使大刀，将化身"炽刃"在灵游街等你一战，可敢来？';
+	shareTxt2 ='神僧测我臂膀矫健宜使大刀，将化身"炽刃"在灵游街等你一战，可敢来？';
+	}
+});
+
+$('#myCanvas').wScratchPad({
+          fg: '#850b0b',
+		  size: 25,
+		  scratchDown: function(){
+			  if(delswip){
+				  alert("少侠，请选择以上秘药！")
+				  this.reset();
+				  }
+			  },
+          scratchMove: function (e, percent) {
+            if (percent > 70 && percent!=100) {
+              this.clear();
+			  $(".share").fadeIn();
+			  $(".overlayer").fadeIn();
+            }
+          }
+        });
+		
+$('.overlayer').click(function(){
+	$(".share").fadeOut();
+	$(".overlayer").fadeOut();
+});
+
+
+
+
+
 	
 	
 	
@@ -136,3 +168,7 @@ if(document.addEventListener){
 	document.attachEvent('WeixinJSBridgeReady' , onBridgeReady);
 	document.attachEvent('onWeixinJSBridgeReady' , onBridgeReady);
 }
+
+
+
+//other
