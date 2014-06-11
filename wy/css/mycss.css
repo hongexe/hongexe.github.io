@@ -57,9 +57,9 @@ animation:redsecond 5s ease infinite;
 .updown{ 
 width:35px; height:39px;background:url('../images/updown.png') no-repeat; margin:0 auto; }
 .lbtitle{background:url('../images/layerbottom.jpg') no-repeat; width:630px; height:84px; position:relative; margin:0 auto; top:5px;}
-.lbcontent{ font-size:40px; color:#fff; padding-top:60px; padding-left:80px;}
+.lbcontent{ font-size:40px; color:#fff; padding-top:60px; padding-left:80px; height:100%;}
 .lbtype{ height:170px; width:540px; position:relative;}
-.lbtype a{ display:block; float:left; width:80px; height:93px; margin-right:45px;}
+/*.lbtype a{ display:block; float:left; width:80px; height:93px; margin-right:45px;}
 .lbtype a.android{ background:url(../images/andriod.png);}
 .lbtype a.android:active{ background-position:-80px 0; }
 .lbtype a.apple{ background:url(../images/apple.png);}
@@ -67,7 +67,7 @@ width:35px; height:39px;background:url('../images/updown.png') no-repeat; margin
 .lbtype a.applefake{ background:url(../images/applefake.png);}
 .lbtype a.applefake:active{ background-position:-80px 0; }
 .lbtype a.other{ background:url(../images/other.png); width:109px;}
-.lbtype a.other:active{ background-position:-109px 0; width:109px;}
+.lbtype a.other:active{ background-position:-109px 0; width:109px;}*/
 .gotoup{ 
 width:28px; height:63px; background:url('../images/up.png') no-repeat; position:absolute; left:50%; margin-left:-14px; top:130px; z-index:2; display:none;
 animation:updown 0.5s infinite alternate;
