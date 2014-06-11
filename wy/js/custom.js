@@ -23,9 +23,9 @@ $(document).ready(function() {
 			});
 		});
 		
-		
-$(function(){
-$('.layerbottom').css('bottom','-666px');
+	
+
+$('.layerbottom').css('bottom','-406px');
 var expanded = true;
 $('.lbtitle').click(function(){
 	if (expanded) {
@@ -34,7 +34,7 @@ $('.lbtitle').click(function(){
 		$(".updown").rotate({duration: 2000,angle: 0,animateTo: 540});
 
 	}else {
-		$('.layerbottom').animate({bottom:'-666'},400);
+		$('.layerbottom').animate({bottom:'-406'},400);
 		$(".updown").rotate({duration: 2000,angle: 540,animateTo: 1080});
 	}
 	expanded = !expanded;
@@ -46,7 +46,7 @@ $('.lbclose').click(function(){
 		$(".updown").rotate({duration: 2000,angle: 0,animateTo: 540});
 
 	}else {
-		$('.layerbottom').animate({bottom:'-666'},400);
+		$('.layerbottom').animate({bottom:'-406'},400);
 		$(".updown").rotate({duration: 2000,angle: 540,animateTo: 1080});
 	}
 	expanded = !expanded;
@@ -64,13 +64,12 @@ function closePop(){
 }
 $('.poplayer').css({top:'-1000',opacity:'0'});
 
-$('.rx, .jq, .bf, .jx, .ll, .nl').click(function(){
+$('.jq, .bf, .jx, .ll, .nl').click(function(){
 	openPop('.poplayer');
 });
 $('.rx').mousedown(function(){
 	    $('.jq span.select, .bf span.select, .jx span.select, .ll span.select, .nl span.select').fadeOut();
 		$('.rx span.select').fadeIn();
-		$(".popcontent span").text("阁下还未参透这“武学”的至高境界，何不再三思三思？");
 });
 $('.jq, .bf, .jx, .ll, .nl').mousedown(function(){
 		$('.rx span.select, .jq span.select, .bf span.select, .jx span.select, .ll span.select, .nl span.select').fadeOut();
@@ -79,11 +78,37 @@ $('.jq, .bf, .jx, .ll, .nl').mousedown(function(){
 });
 
 
+$('.mpone').click(function(){
+	openPop('.poplayer');
+	$(".popcontent span").text("组织组织");
+});
+$('.mptwo').click(function(){
+	openPop('.poplayer');
+	$(".popcontent span").text("蜃楼");
+});
+$('.mpthree').click(function(){
+	openPop('.poplayer');
+	$(".popcontent span").text("影");
+});
+$('.pone').click(function(){
+	openPop('.poplayer');
+	$(".popcontent span").text("轻羽");
+});
+$('.ptwo').click(function(){
+	openPop('.poplayer');
+	$(".popcontent span").text("绝影");
+});
+$('.pthree').click(function(){
+	openPop('.poplayer');
+	$(".popcontent span").text("炙刃");
+});
+
+
 
 $('.popclose').click(function(){
 	closePop();
 });
-});
+
 		
 $('.android').click(function(){
 	$(".android").css("background-position","80px 0");
@@ -146,19 +171,20 @@ $('#myCanvas').wScratchPad({
 		  size: 25,
 		  scratchDown: function(){
 			  if(delswip){
-				  alert("请选择以上秘药！")
+				  alert("少侠，请选择以上秘药！")
 				  this.reset();
 				  }
 			  },
           scratchMove: function (e, percent) {
-            if (percent > 70) {
+            if (percent > 70 && percent!=100) {
               this.clear();
+			  $(".share").fadeIn();
+			  $(".overlayer").fadeIn();
             }
-          },
+          }
         });
-
-var myVideo=document.getElementById("video1");
-function play()
-{ 
-  myVideo.play(); 
-} 
+		
+$('.overlayer').click(function(){
+	$(".share").fadeOut();
+	$(".overlayer").fadeOut();
+});

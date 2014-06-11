@@ -22,27 +22,13 @@
 </head>
 <body>
 <div class="nav"><a href="wl.html" class="wl"></a><a href="wx.html" class="wxclick"></a><a href="mf.html" class="mf last"></a></div>
-<div class="layerbottom">
-  <div class="lbclose">
-    <div class="updown"></div>
-  </div>
-  <div class="lbtitle"></div>
-  <div class="lbcontent"> <img src="images/phone.png" width="331" height="37">
-    <input type="tel" id="phone" name="phone">
-    <br />
-    <br />
-    <img src="images/type.png" width="371" height="37">
-    <div class="lbtype"><a class="android"></a><a class="apple"></a><a class="applefake"></a><a class="other last"></a></div>
-    <input type="button" id="submit" name="submit" value="">
-  </div>
-</div>
 <div id="wlpage">
   <div class="section">
     <div class="wxtxt"></div>
     <div class="wxmstxt"></div>
     <div class="wxwrap">
       <div class="wxc"></div>
-      <div class="rx" ><span class="select"></span></div>
+      <div class="rx" onClick="play2()"><span class="select"></span></div>
       <div class="jq" ><span class="select"></span></div>
       <div class="bf" ><span class="select"></span></div>
       <div class="jx" ><span class="select"></span></div>
@@ -53,11 +39,7 @@
   <div class="section">
     <div class="wxtxt"></div>
     <div class="wxmstxt"></div>
-    <div class="wxlp"> <a class="lpone" href="javascript:viod(0);" onClick="play()"></a> <a class="lptwo" href="javascript:viod(0);" onClick="play()"></a> <a class="lpthree" href="javascript:viod(0);" onClick="play()"></a>
-      <video id="video1" width="420">
-        <source src="http://www.w3school.com.cn/example/html5/mov_bbb.mp4" type="video/mp4" />
-        <source src="http://www.w3school.com.cn/example/html5/mov_bbb.ogg" type="video/ogg" />
-      </video>
+    <div class="wxlp"> <a class="lpone" href="javascript:viod(0);" onClick="play3()"></a> <a class="lptwo" href="javascript:viod(0);" onClick="play4()"></a> <a class="lpthree" href="javascript:viod(0);" onClick="play5()"></a>
     </div>
   </div>
 </div>
@@ -68,10 +50,45 @@
   <div class="popclose" id="popclose"></div>
   <div class="popcontent"><span></span></div>
 </div>
-<script type="text/javascript" src="js/jquery.min.js"></script> 
+<div class="layerbottom">
+  <div class="lbclose">
+    <div class="updown"></div>
+  </div>
+  <div class="lbtitle"></div>
+  <div class="lbcontent"> <img src="images/phone.png" width="331" height="37">
+    <input type="tel" id="phone" name="phone">
+    <br />
+    <br />
+    <input type="button" id="submit" name="submit" value="">
+  </div>
+</div>
+<video id="video2" width="420">
+      <source src="http://v.nie.netease.com/yzr/2014/0417/lzsp.mp4" type="video/mp4" />
+      <source src="http://v.nie.netease.com/yzr/2014/0417/lzsp.f4v" type="video/f4v" />
+</video>
+<video id="video3" width="420">
+      <source src="http://v.nie.netease.com/yzr/2014/0417/fkl.mp4" type="video/mp4" />
+      <source src="http://v.nie.netease.com/yzr/2014/0417/fkl.f4v" type="video/f4v" />
+</video>
+<video id="video4" width="420">
+      <source src="http://v.nie.netease.com/yzr/2014/0417/ljl.mp4" type="video/mp4" />
+      <source src="http://v.nie.netease.com/yzr/2014/0417/ljl.f4v" type="video/f4v" />
+</video>
+<video id="video5" width="420">
+      <source src="http://v.nie.netease.com/yzr/2014/0417/syl.mp4" type="video/mp4" />
+      <source src="http://v.nie.netease.com/yzr/2014/0417/syl.f4v" type="video/f4v" />
+</video>
+<script type="text/javascript" src="js/jquery.1.11.0.min.js"></script>
 <script type="text/javascript" src="js/jQueryRotate.js"></script> 
 <script type="text/javascript" src="js/jquery.fullPage.js"></script> 
-<script type="text/javascript" src="js/custom.js"></script> 
+<script charset="gb2312" src="js/custom.js"></script> 
 <script charset="gb2312" src="js/index.js"></script>
+<script type="text/javascript">
+var myVideo2=document.getElementById("video2"), myVideo3=document.getElementById("video3"), myVideo4=document.getElementById("video4"), myVideo4=document.getElementById("video4");
+function play2(){ myVideo2.play();} 
+function play3(){ myVideo3.play();} 
+function play4(){ myVideo4.play();} 
+function play5(){ myVideo5.play();} 
+</script>
 </body>
 </html>
