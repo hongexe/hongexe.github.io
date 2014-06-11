@@ -19,68 +19,6 @@ $(function(){
 
 
 
-var delswip = true; 
-$('.myone').click(function(){
-	if(delswip){
-	$(".myone").css("background-position","-200px 0");
-	$(".mytwo").css("background-position","-400px -191px");
-	$(".mythree").css("background-position","-400px -382px");
-	$("#myCanvas").css({"background-position":"0 0"});
-	delswip = false;
-	shareTxt ='神僧测我身手敏捷宜使快剑，将化身"轻羽"在灵游街等你一战，可敢来？';
-	shareTxt2 ='神僧测我身手敏捷宜使快剑，将化身"轻羽"在灵游街等你一战，可敢来？';
-	
-	}
-});
-$('.mytwo').click(function(){
-	if(delswip){
-	$(".myone").css("background-position","-400px 0");
-	$(".mytwo").css("background-position","-200px -191px");
-	$(".mythree").css("background-position","-400px -382px");
-	$("#myCanvas").css({"background-position":"0 -193px"});
-	delswip = false;
-	shareTxt ='神僧测我体态轻盈宜修轻功，将化身"绝影"在灵游街等你一战，可敢来？';
-	shareTxt2 ='神僧测我体态轻盈宜修轻功，将化身"绝影"在灵游街等你一战，可敢来？';
-	}
-});
-$('.mythree').click(function(){
-	if(delswip){
-	$(".myone").css("background-position","-400px 0");
-	$(".mytwo").css("background-position","-400px -191px");
-	$(".mythree").css("background-position","-200px -382px");
-	$("#myCanvas").css({"background-position":"0 -386px"});
-	delswip = false;
-	shareTxt ='神僧测我臂膀矫健宜使大刀，将化身"炽刃"在灵游街等你一战，可敢来？';
-	shareTxt2 ='神僧测我臂膀矫健宜使大刀，将化身"炽刃"在灵游街等你一战，可敢来？';
-	}
-});
-
-$('#myCanvas').wScratchPad({
-          fg: '#850b0b',
-		  size: 25,
-		  scratchDown: function(){
-			  if(delswip){
-				  alert("少侠，请选择以上秘药！")
-				  this.reset();
-				  }
-			  },
-          scratchMove: function (e, percent) {
-            if (percent > 70 && percent!=100) {
-              this.clear();
-			  $(".share").fadeIn();
-			  $(".overlayer").fadeIn();
-            }
-          }
-        });
-		
-$('.overlayer').click(function(){
-	$(".share").fadeOut();
-	$(".overlayer").fadeOut();
-});
-
-
-
-
 
 	
 	
@@ -172,3 +110,61 @@ if(document.addEventListener){
 
 
 //other
+var delswip = true; 
+$('.myone').click(function(){
+	if(delswip){
+	$(".myone").css("background-position","-200px 0");
+	$(".mytwo").css("background-position","-400px -191px");
+	$(".mythree").css("background-position","-400px -382px");
+	$("#myCanvas").css({"background-position":"0 0"});
+	delswip = false;
+	shareTxt ='神僧测我身手敏捷宜使快剑，将化身“轻羽”在灵游街等你一战，可敢来？';
+	shareTxt2 ='神僧测我身手敏捷宜使快剑，将化身“轻羽”在灵游街等你一战，可敢来？';
+	
+	}
+});
+$('.mytwo').click(function(){
+	if(delswip){
+	$(".myone").css("background-position","-400px 0");
+	$(".mytwo").css("background-position","-200px -191px");
+	$(".mythree").css("background-position","-400px -382px");
+	$("#myCanvas").css({"background-position":"0 -193px"});
+	delswip = false;
+	shareTxt ='神僧测我体态轻盈宜修轻功，将化身“绝影”在灵游街等你一战，可敢来？';
+	shareTxt2 ='神僧测我体态轻盈宜修轻功，将化身“绝影”在灵游街等你一战，可敢来？';
+	}
+});
+$('.mythree').click(function(){
+	if(delswip){
+	$(".myone").css("background-position","-400px 0");
+	$(".mytwo").css("background-position","-400px -191px");
+	$(".mythree").css("background-position","-200px -382px");
+	$("#myCanvas").css({"background-position":"0 -386px"});
+	delswip = false;
+	shareTxt ='神僧测我臂膀矫健宜使大刀，将化身“炽刃”在灵游街等你一战，可敢来？';
+	shareTxt2 ='神僧测我臂膀矫健宜使大刀，将化身“炽刃”在灵游街等你一战，可敢来？';
+	}
+});
+
+$('#myCanvas').wScratchPad({
+          fg: '#850b0b',
+		  size: 25,
+		  scratchDown: function(){
+			  if(delswip){
+				  alert("少侠，请选择以上秘药！")
+				  this.reset();
+				  }
+			  },
+          scratchMove: function (e, percent) {
+            if (percent > 70 && percent!=100) {
+              this.clear();
+			  $(".share").fadeIn();
+			  $(".overlayer").fadeIn();
+            }
+          }
+        });
+		
+$('.overlayer').click(function(){
+	$(".share").fadeOut();
+	$(".overlayer").fadeOut();
+});
