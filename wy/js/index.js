@@ -205,6 +205,8 @@ var ggl = {
 			}
 		}
 		if(j>=this.width*this.height*0.5){
+			this.width=0;
+			this.height=0;
 			$(".share").fadeIn();
 			$(".overlayer").fadeIn();
 		}
