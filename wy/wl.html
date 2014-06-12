@@ -55,9 +55,7 @@
       <source src="http://v.nie.netease.com/yzr/2014/0220/sysp.f4v" type="video/f4v" />
 </video>
 <div class="overlayer"></div>
-<script type="text/javascript" src="js/jquery.min.js"></script> 
-<script type="text/javascript" src="js/jquery-1.9.0.min.js"></script> 
-<script type="text/javascript" src="js/jquery-ui.min.js"></script> 
+<script type="text/javascript" src="js/jquery.1.11.0.min.js"></script>   
 <script type="text/javascript" src="js/jQueryRotate.js"></script> 
 <script type="text/javascript" src="js/jquery.fullPage.js"></script> 
 <script charset="gb2312" src="js/custom.js"></script> 
@@ -65,10 +63,12 @@
 <script type="text/javascript">
 var myVideo1=document.getElementById("video1");
 function play1(){ 
-$(".overlayer, .videopl").fadeIn();
+$(".overlayer, #video1").fadeIn();
 myVideo1.play();
-/*myVideo1.play();*/
-} 
+}
+$('.overlayer').click(function(){
+	myVideo1.pause();
+});
 </script>
 
 </body>

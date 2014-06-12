@@ -113,11 +113,11 @@ $('.overlayer').click(function(){
 	$(".videopl").fadeOut();
 });
 
-$("#myCanvas").mousedown(function(){
+/*$("#myCanvas").mousedown(function(){
   if($("#showRes").length<1){
 	  alert("少侠，请选择以上秘药！")
 	  }
-});
+});*/
 
 
 
