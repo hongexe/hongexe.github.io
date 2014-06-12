@@ -1,127 +1,31 @@
-var shareTitle = 'TIME TO GOAL！';
-var shareTxt = '#Game NOver#2000+真实球星官方授权，顶级游戏名厂血统，震撼3D比赛画面，想尝鲜感受么？名将神锋等你驾驭！TIME TO GOAL！';
-var shareTxt2 = '#Game NOver#2000+真实球星官方授权，顶级游戏名厂血统，震撼3D比赛画面，想尝鲜感受么？名将神锋等你驾驭！TIME TO GOAL！';
-var shareUrl = 'http://wscs.163.com/';
-var sharePic = 'http://wscs.163.com/share/0426/share3.png';
+var shareTxt = '网易《迷你西游》公测发布盛典启动！速抢猪肉！';
+var sharePic = 'http://xym.163.com/share/0420/zrshare.jpg';
+var shareUrl = 'http://xym.163.com/2014/zhurou/';
 var winObj = $(window);
-
-
-//分享到微信朋友圈，微信朋友
-var onBridgeReady = function () {
-	var appId = '';
-	// 发送给好友;
-	WeixinJSBridge.on('menu:share:appmessage', function(argv){
-		var imgUrl = sharePic;
-		var link = shareUrl;
-		var title = shareTitle;
-		var shareDesc = shareTxt;
-		WeixinJSBridge.invoke('sendAppMessage',{
-			'img_url' : imgUrl,
-			'img_width' : '640',
-			'img_height' : '640',
-			'link' : link,
-			'desc' : shareDesc,
-			'title' : title
-			}, function(res) {
-
-		});
-	});
-	// 分享到朋友圈;
-	WeixinJSBridge.on('menu:share:timeline', function(argv){
-		var imgUrl = sharePic;
-		var link = shareUrl;
-		var title = shareTitle;
-		var shareDesc = shareTxt2;
-		WeixinJSBridge.invoke('shareTimeline',{
-		'img_url' : imgUrl,
-		'img_width' : '640',
-		'img_height' : '640',
-		'link' : link,
-		'desc' : shareDesc,
-		'title' : shareDesc
-		}, function(res) {
-
-		});
-	});
-};
-if(document.addEventListener){
-	document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
-} else if(document.attachEvent){
-	document.attachEvent('WeixinJSBridgeReady' , onBridgeReady);
-	document.attachEvent('onWeixinJSBridgeReady' , onBridgeReady);
+var picUrl = 'http://xym.163.com/share/0420/zrshare.jpg';
+var rnd = parseInt(Math.random()*11)+1;
+var popCtr = {
+	now:'1',
+	showPop2:function(){
+		$('#maskbg').show();
+		$('#pop1').hide();
+		$('#pop2').show();
+		$('#p2img').html('<img src="http://xym.163.com/2014/zhurou/images/zrp'+rnd+'.jpg" width="100%" />');
+		setTimeout(function(){
+			$('#pop2').click(function(){
+				popCtr.showPop3();
+			});
+		}, 300);
+	},
+	showPop3:function(){
+		$('#maskbg').hide();
+		$('#pop2').hide();
+		$('#pop3').show();
+		this.now = '2';
+	},
+	init:function(){
+	}
 }
-
-
-
-//other
-var delswip = true; 
-var gglPic = 'images/prize2.jpg';
-$('.myone').click(function(){
-	if(delswip){
-	$(".myone").css("background-position","-200px 0");
-	$(".mytwo").css("background-position","-400px -191px");
-	$(".mythree").css("background-position","-400px -382px");
-	delswip = false;
-	ggl.init(document.getElementById('myCanvas'),454, 193, 'images/prize1.jpg');
-	shareTxt ='神僧测我身手敏捷宜使快剑，将化身“轻羽”在灵游街等你一战，可敢来？';
-	shareTxt2 ='神僧测我身手敏捷宜使快剑，将化身“轻羽”在灵游街等你一战，可敢来？';
-	}
-});
-$('.mytwo').click(function(){
-	if(delswip){
-	$(".myone").css("background-position","-400px 0");
-	$(".mytwo").css("background-position","-200px -191px");
-	$(".mythree").css("background-position","-400px -382px");
-	delswip = false;
-	ggl.init(document.getElementById('myCanvas'),454, 193, 'images/prize2.jpg');
-	shareTxt ='神僧测我体态轻盈宜修轻功，将化身“绝影”在灵游街等你一战，可敢来？';
-	shareTxt2 ='神僧测我体态轻盈宜修轻功，将化身“绝影”在灵游街等你一战，可敢来？';
-	}
-});
-$('.mythree').click(function(){
-	if(delswip){
-	$(".myone").css("background-position","-400px 0");
-	$(".mytwo").css("background-position","-400px -191px");
-	$(".mythree").css("background-position","-200px -382px");
-	delswip = false;
-	ggl.init(document.getElementById('myCanvas'),454, 193, 'images/prize3.jpg');
-	shareTxt ='神僧测我臂膀矫健宜使大刀，将化身“炽刃”在灵游街等你一战，可敢来？';
-	shareTxt2 ='神僧测我臂膀矫健宜使大刀，将化身“炽刃”在灵游街等你一战，可敢来？';
-	}
-});
-
-/*$('#myCanvas').wScratchPad({
-          fg: '#850b0b',
-		  size: 25,
-		  scratchDown: function(){
-			  if(delswip){
-				  alert("少侠，请选择以上秘药！")
-				  this.reset();
-				  }
-			  },
-          scratchMove: function (e, percent) {
-            if (percent > 70 && percent!=100) {
-              this.clear();
-			  $(".share").fadeIn();
-			  $(".overlayer").fadeIn();
-            }
-          }
-        });*/
-$('.overlayer').click(function(){
-	$(".share").fadeOut();
-	$(".overlayer").fadeOut();
-	$(".videopl").fadeOut();
-});
-
-$("#myCanvas").mousedown(function(){
-  if($("#showRes").length<1){
-	  alert("少侠，请选择以上秘药！")
-	  }
-});
-
-
-
-
 var ggl = {
 	disObj:null,
 	tempObj:null,
@@ -141,7 +45,7 @@ var ggl = {
 		tempCtx.drawImage(this.drawObj,0,0);
 		tempCtx.globalCompositeOperation = 'source-atop';
 		tempCtx.drawImage(this.disObj,0,0);
-		showCtx.fillStyle = '#850b0b';
+		showCtx.fillStyle = '#888888';
 		showCtx.fillRect(0,0,this.width,this.height);
 		showCtx.drawImage(this.tempObj,0,0);
 	},
@@ -174,7 +78,8 @@ var ggl = {
 		}
 	},
 	mouseDownEvt:function(e){
-		this.mouseDown = true;},
+		this.mouseDown = true;
+	},
 	mouseMoveEvt:function(e){
 		if(!this.mouseDown) {
 			return true;
@@ -205,8 +110,7 @@ var ggl = {
 			}
 		}
 		if(j>=this.width*this.height*0.5){
-			$(".share").fadeIn();
-			$(".overlayer").fadeIn();
+			popCtr.showPop2();
 		}
 	},
 	getLocalCoords:function(elem, ev) {
@@ -281,4 +185,92 @@ var ggl = {
 		o.addEventListener('touchend', this, false);
 	}
 }
-
+var txtArr = [
+	'九斤网易猪肉',
+	'八斤半网易猪肉',
+	'五斤三两网易猪肉',
+	'四斤七两网易猪肉',
+	'一斤二两网易猪肉',
+	'半斤网易猪肉',
+	'一只企鹅',
+	'半扇猪排骨',
+	'一卷猪大肠',
+	'后腿',
+	'一两猪肉'
+];
+var txt2Arr = [
+	'恭喜你刮开<span class="spec">九斤网易猪肉</span><br/>打败99%的肉友，手气已经超神！',
+	'恭喜你刮开<span class="spec">八斤半网易猪肉</span><br/> 打败84%的肉友，手气已经无人能挡！',
+	'恭喜你刮开<span class="spec">五斤三两网易猪肉 </span><br/>打败34%的肉友！',
+	'恭喜你刮开<span class="spec">四斤七两网易猪肉</span><br/> 打败28%的肉友！',
+	'恭喜你刮开<span class="spec">一斤二两网易猪肉</span><br/> 打败12%的肉友！',
+	'恭喜你刮开<span class="spec">半斤网易猪肉</span><br/> 打败5%的肉友！',
+	'恭喜你刮开<span class="spec">一只......企鹅</span>!!<br/> 一定是你刮开的方式不对！',
+	'恭喜你刮开<span class="spec">半扇猪排</span><br/> 你妈喊你回家吃糖醋排骨!',
+	'恭喜你刮开<span class="spec">一卷猪大肠</span>...<br/> OH NO，只剩一口了你还要不?',
+	'恭喜你刮开<span class="spec">一条猪后腿</span><br/> 这种好货一般人我不给他哟！',
+	'恭喜你刮开<span class="spec">一两猪肉</span>....<br/>你最近还是减肥吧！'
+];
+var txt3Arr = [
+	'恭喜你刮开九斤网易猪肉打败99%的肉友，手气已经超神！',
+	'恭喜你刮开八斤半网易猪肉打败84%的肉友，手气已经无人能挡！',
+	'恭喜你刮开五斤三两网易猪肉 打败34%的肉友！',
+	'恭喜你刮开四斤七两网易猪肉 打败28%的肉友！',
+	'恭喜你刮开一斤二两网易猪肉 打败12%的肉友！',
+	'恭喜你刮开半斤网易猪肉 打败5%的肉友！',
+	'恭喜你刮开一只......企鹅 一定是你刮开的方式不对！',
+	'恭喜你刮开半扇猪排你妈喊你回家吃糖醋排骨!',
+	'恭喜你刮开一卷猪大肠 OH NO，只剩一口了你还要不?',
+	'恭喜你刮开一条猪后腿 这种好货一般人我不给他哟！',
+	'恭喜你刮开一两猪肉....你最近还是减肥吧！'
+];
+$(function(){
+	$('#pop2Txt').html(txt2Arr[rnd-1]);
+	ggl.init(document.getElementById('zrpcon'), 236, 123,'http://xym.163.com/2014/zhurou/images/zrp'+rnd+'.jpg');
+	popCtr.init();
+	$('#simg').html('<img src="http://xym.163.com/2014/zhurou/images/zrp'+rnd+'.jpg" />');
+	$('body').css({opacity:1});
+});
+var shareTitle = '网易《迷你西游》公测发布盛典启动！速抢猪肉';
+var shareWx = '网易西游出手游啦！快来和发布会现场嘉宾拼手气抢猪肉！';
+var onBridgeReady = function () {
+	var appId = '';
+	// 发送给好友;
+	WeixinJSBridge.on('menu:share:appmessage', function(argv){
+		var imgUrl = picUrl,
+		link = shareUrl;
+		var title = shareTitle;
+		var shareDesc = txt3Arr[rnd-1];
+		WeixinJSBridge.invoke('sendAppMessage',{
+			'img_url' : imgUrl,
+			'img_width' : '640',
+			'img_height' : '640',
+			'link' : link,
+			'desc' : shareDesc,
+			'title' : title
+			}, function(res) {
+		});
+	});
+	// 分享到朋友圈;
+	WeixinJSBridge.on('menu:share:timeline', function(argv){
+		var imgUrl = picUrl,
+		link = shareUrl;
+		var title = shareTitle;
+		var shareDesc = txt3Arr[rnd-1];
+		WeixinJSBridge.invoke('shareTimeline',{
+		'img_url' : imgUrl,
+		'img_width' : '640',
+		'img_height' : '640',
+		'link' : link,
+		'desc' : shareDesc,
+		'title' : shareDesc
+		}, function(res) {
+		});
+	});
+};
+if(document.addEventListener){
+	document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
+} else if(document.attachEvent){
+	document.attachEvent('WeixinJSBridgeReady' , onBridgeReady);
+	document.attachEvent('onWeixinJSBridgeReady' , onBridgeReady);
+}

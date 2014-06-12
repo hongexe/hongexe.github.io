@@ -96,7 +96,7 @@ animation:godownred 0.5s infinite alternate;
 .wlvideo{ background:url(../images/wlvbg.jpg); width:520px; height:365px; position:relative; margin:0 auto; top:365px; }
 .vbtn{ width:113px; height:113px; background:url(../images/vbtn.png); position:relative; margin:0 auto; top:133px;}
 .vbtn:active{ background-position:113px 0;}
-#video1{ position:absolute; left:-1000px;}
+.videopl{ position:absolute; z-index:10; left:0; top:50%; margin-top:-180px; display:none;}
 .mp{ position:relative; height:100%; width:640px;}
 .mp a{ display:block; float:left; width:94px; height:132px; position:absolute; top:280px;}
 .mp a.mpone{background:url(../images/wlzz.png); left:70px;}
@@ -141,9 +141,9 @@ animation:godownred 0.5s infinite alternate;
 .my a.mytwo{ background-position:0 -191px;}
 .my a.mythree{ background-position:0 -382px;}
 .mytxt{ position:relative; left:50%;margin-left:-250px;}
-#myCanvas{ position:absolute; left:50%; margin-left:-227px; margin-top:20px;width:454px; height:193px; background:url(../images/prize.jpg) no-repeat;}
+#myCanvas{ position:absolute; left:50%; margin-left:-227px; margin-top:20px;width:454px; height:193px; background:#850b0b; /*background:url(../images/prize.jpg) no-repeat;*/}
 .share{ width:520px; height:235px; position:absolute; top:10px; right:35px; background:url(../images/share.png); z-index:10; display:none;}
-.overlayer{ position:absolute; top:0; bottom:0; left:0; right:0;background: #000; opacity: 0.7;filter:Alpha(Opacity=70); z-index:9; display:none;}
+.overlayer{ position:absolute; top:0; bottom:0; left:0; right:0;background: #000; opacity: 0.5;filter:Alpha(Opacity=50); z-index:9; display:none;}
 
 @keyframes redfirst
 {
