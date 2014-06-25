@@ -7,32 +7,6 @@ body, html {background:#289adf;text-align: left;height: 100%;width: 100%;font-fa
 .down{ position:absolute; width:579px; height:163px; background:url(../images/down.png) no-repeat; top:295px; left:30px; z-index:1}
 .down:active{ background-position:0 -163px;}
 .fire{ position:absolute; width:120px; height:106px; top:237px; left:584px; background:url(../images/fire.png) no-repeat; z-index:1;
-/*animation: fire 3s ease infinite;
--moz-animation: fire 3s ease infinite;
--webkit-animation: fire 3s ease infinite;
--o-animation: fire 3s ease infinite;*/
+
 }
 
-/*@keyframes fire
-{
-from {top:280px; left:650px;}
-to {top:-106px; left:100px;}
-}
-
-@-moz-keyframes fire 
-{
-from {top:280px; left:650px;}
-to {top:-106px; left:100px;}
-}
-
-@-webkit-keyframes fire
-{
-from {top:280px; left:650px;}
-to {top:-106px; left:100px;}
-}
-
-@-o-keyframes fire
-{
-from {top:280px; left:650px;}
-to {top:-106px; left:100px;}
-}*/
