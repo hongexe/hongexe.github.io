@@ -17,26 +17,3 @@ animation: fire 3s ease infinite;
 -o-animation: fire 3s ease infinite;
 }
 
-@keyframes fire
-{
-from {top:275px; left:640px;}
-to {top:-106px; left:100px;}
-}
-
-@-moz-keyframes fire 
-{
-from {top:275px; left:640px;}
-to {top:-106px; left:100px;}
-}
-
-@-webkit-keyframes fire
-{
-from {top:275px; left:640px;}
-to {top:-106px; left:100px;}
-}
-
-@-o-keyframes fire
-{
-from {top:275px; left:640px;}
-to {top:-106px; left:100px;}
-}
