@@ -3,17 +3,39 @@ ul,li,div,p,body{margin:0;padding:0;-moz-user-select: none;-khtml-user-select: n
 li{list-style:none;}
 a{text-decoration:none;}
 .hide{display:none;}
-h1{display:none;}
-body, html {background:#0e0e0e;text-align: left;height: 100%;width: 100%;font-family: "Helvetica Neue",Arial, HelveticaNeue, "Helvetica-Neue", Helvetica, "BBAlpha Sans", sans-serif;font-size: 16px;font-weight: normal;display: -webkit-box;-webkit-box-orient: vertical; -webkit-box-align: center;}
+body, html {background:#0e0e0e;text-align: left;height: 100%;width: 100%;display: -webkit-box;-webkit-box-orient: vertical; -webkit-box-align: center;}
 *{-webkit-tap-highlight-color:rgba(14,159,111,0);-webkit-touch-callout:none;}
 body{height:100%;}
 .main{position:relative;width:640px;height:1136px;left:0;top:0;background:url('../images/bg.jpg') no-repeat;}
 .down{ position:absolute; width:579px; height:163px; background:url(../images/down.png) no-repeat; top:295px; left:30px;}
-.down:active{ background-position:0 -163px;}
-.fire{ position:absolute; width:120px; height:106px; background:url(../images/fire.png) no-repeat;
+.down:active{ background-position:0 -100px;}
+.fire{ position:absolute; width:120px; height:106px; top:275px; left:640px; background:url(../images/fire.png) no-repeat;
 animation: fire 3s ease infinite;
 -moz-animation: fire 3s ease infinite;
 -webkit-animation: fire 3s ease infinite;
 -o-animation: fire 3s ease infinite;
 }
 
+@keyframes fire
+{
+from {top:275px; left:640px;}
+to {top:-106px; left:100px;}
+}
+
+@-moz-keyframes fire 
+{
+from {top:275px; left:640px;}
+to {top:-106px; left:100px;}
+}
+
+@-webkit-keyframes fire
+{
+from {top:275px; left:640px;}
+to {top:-106px; left:100px;}
+}
+
+@-o-keyframes fire
+{
+from {top:275px; left:640px;}
+to {top:-106px; left:100px;}
+}
