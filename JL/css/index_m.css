@@ -1,4 +1,4 @@
-body{margin:0;padding:0;background:#289adf;height: 100%;width: 100%;}
+body{margin:0;padding:0;background:#289adf;height: 100%;width: 100%; overflow:hidden;}
 *{-webkit-tap-highlight-color:rgba(239,181,20,0);-webkit-touch-callout:none;}
 .bg{ position:relative;width:640px;height:1136px;background:url('../images/bg.jpg') no-repeat;margin:0 auto;}
 .download{ position:absolute; width:579px; height:163px; background:url(../images/down.png) no-repeat; top:295px; left:30px; border-radius:70px;}
