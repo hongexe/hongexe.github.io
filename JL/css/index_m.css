@@ -13,12 +13,7 @@ animation: upd 0.5s infinite alternate;
 -o-animation: upd 0.5s infinite alternate;
 }
 .overly{ position:fixed; top:0; bottom:0; left:0; right:0; z-index:1;background: #000; opacity: 0.2;filter:Alpha(Opacity=20); display:none;}
-.fire{ position:absolute; width:120px; height:106px; top:237px; left:584px; background:url(../images/fire.png) no-repeat;
-animation: fly 3s ease infinite;
--moz-animation: fly 3s ease infinite;
--webkit-animation: fly 3s ease infinite;
--o-animation: fly 3s ease infinite;
-}
+.fire{ position:absolute; width:120px; height:106px; top:235px; left:585px; background:url(../images/fire.png) no-repeat;}
 @keyframes fly
 {
 from {top:280px; left:650px;}
