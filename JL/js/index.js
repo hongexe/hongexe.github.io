@@ -2,7 +2,7 @@
 var shareTitle = '《进击吧巨龙》网易用户专享封测';
 var shareTxt = '抢先体验送6大超值奖励！网易自主研发策略精品大作《进击吧巨龙》今日封测开启！';
 var shareTxt2 = '抢先体验送6大超值奖励！网易自主研发策略精品大作《进击吧巨龙》今日封测开启！';
-var shareUrl = 'http://dino.163.com/m/download';
+var shareUrl = 'http://dino.163.com/m/download/';
 var sharePic = 'http://dino.163.com/m/download/images/pic1.jpg';
 var winObj = $(window);
 
@@ -19,6 +19,7 @@ $(".download").click(function(){
 	if(isWeiXin()){
 		$(".tip").fadeIn();
 		$(".overly").fadeIn();
+		$(".download").attr("href","#");
 		}
 		else{
 		$(".tip").fadeOut();	
