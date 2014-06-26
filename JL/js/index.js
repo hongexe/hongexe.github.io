@@ -18,11 +18,15 @@ return false;
 $(".download").click(function(){
 	if(isWeiXin()){
 		$(".tip").fadeIn();
+		$(".overly").fadeIn();
 		}
 		else{
 		$(".tip").fadeOut();	
 			}
-	
+	})
+$(".overly").click(function(){
+	$(".tip").fadeOut();
+	$(".overly").fadeOut();
 	})
 
 
