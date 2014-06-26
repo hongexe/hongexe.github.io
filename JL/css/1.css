@@ -1,0 +1,5 @@
+@charset "gb2312";
+/* CSS Document */
+
+#cs{ display:block; width:579px; height:163px; background:#099; color:#fff; font-size:30px;}
+#cs:active{ background:#F90; color:#000;}
