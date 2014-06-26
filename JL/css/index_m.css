@@ -7,10 +7,10 @@ body{height:100%;}
 .download{ position:absolute; width:579px; height:163px; background:url(../images/down.png) no-repeat; top:295px; left:30px; border-radius:70px;}
 .download:active{ background-position:0 -163px;}
 .tip{ position:absolute; width:214px; height:130px; background:url(../images/tip.png); right:5px; top:5px; z-index:2; display:none;
-animation: upd 1s linear infinite alternate;
--moz-animation: upd 1s linear infinite alternate;
--webkit-animation: upd 1s linear infinite alternate;
--o-animation: upd 1s linear infinite alternate;
+animation: upd 0.5s infinite alternate;
+-moz-animation: upd 0.5s infinite alternate;
+-webkit-animation: upd 0.5s infinite alternate;
+-o-animation: upd 0.5s infinite alternate;
 }
 .overly{ position:fixed; top:0; bottom:0; left:0; right:0; z-index:1;background: #000; opacity: 0.2;filter:Alpha(Opacity=20); display:none;}
 .fire{ position:absolute; width:120px; height:106px; top:237px; left:584px; background:url(../images/fire.png) no-repeat;
