@@ -6,17 +6,17 @@ var shareUrl = 'http://dino.163.com/m/download/';
 var sharePic = 'http://dino.163.com/m/download/images/pic1.jpg';
 var winObj = $(window);
 
-function isweixn(){
-    var ua = navigator.userAgent.toLowerCase();
-    if(ua.match(/MicroMessenger/i)=="micromessenger") {
-        return true;
-    } else {
-        return false;
-    }
-}
+function isWeiXin(){ 
+var ua = window.navigator.userAgent.toLowerCase(); 
+if(ua.match(/MicroMessenger/i) == 'micromessenger'){ 
+return true; 
+}else{ 
+return false; 
+} 
+} 
 
 $(".download").click(function(){
-	if(isweixn){
+	if(isWeiXin()){
 		$(".tip").fadeIn();
 		}
 		else{
