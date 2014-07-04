@@ -1,6 +1,6 @@
 // JavaScript Document
 $(document).ready(function() {
-		$('#fullpage').fullpage({
+		$('#fullPage').fullpage({
 		easing: 'swing',
 		/*afterLoad: function(anchorLink, index){
             if(index == '1'){

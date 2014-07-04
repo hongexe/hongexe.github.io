@@ -8,7 +8,7 @@ body, html {background:#eee;text-align: left;height: 100%;width: 100%;font-famil
 body{height:100%;}
 #fullPage{ width:640px; height:100%; position:relative; z-index:2;}
 .section{ width:640px; }
-.main{ position:fixed;width:640px;height:100%;top:0; left:50%; background:url('../images/bg.jpg') no-repeat; margin-left:-320px; z-index:1;}
+.main{ position:fixed;width:640px;height:100%;top:0; background:url('../images/bg.jpg') no-repeat; z-index:1;}
 .title{ position:fixed; width:640px; height:82px; background:url(../images/title.jpg) no-repeat; top:0; left:0; z-index:10;}
 .bti{ position:fixed; width:640px; height:110px; background:url(../images/yybg.jpg) no-repeat; bottom:0; left:0; z-index:10;}
 .opeo{ position:absolute; width:612px; height:581px; background:url(../images/main.png) no-repeat; top:160px; left:28px;}
