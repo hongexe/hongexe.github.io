@@ -2,7 +2,7 @@
 $(document).ready(function() {
 		$('#fullpage').fullpage({
 		easing: 'swing',
-		afterLoad: function(anchorLink, index){
+		/*afterLoad: function(anchorLink, index){
             if(index == '1'){
 				$(".gotoup").fadeOut();
 				$(".gotodown").fadeIn();
@@ -25,7 +25,7 @@ $(document).ready(function() {
 				
 				}
         }
-		
+		*/
 	});
 	
 });
