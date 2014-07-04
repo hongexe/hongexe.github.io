@@ -15,27 +15,23 @@ $(function(){
             if(index == '1'){
 				$(".gotoup").fadeOut();
 				$(".gotodown").fadeIn();
-				$(".gotodown").click(function(){$('#fullpage').fullpage.moveTo(2);})
+				
             } else if(index == '2'){
 				$(".gotoup").fadeIn();
 				$(".gotodown").fadeIn();
-				$(".gotoup").click(function(){$('#fullpage').fullpage.moveTo(1);})
-				$(".gotodown").click(function(){$('#fullpage').fullpage.moveTo(3);})
+				
 				} else if(index == '3'){
 				$(".gotoup").fadeIn();
 				$(".gotodown").fadeIn();
-				$(".gotoup").click(function(){$('#fullpage').fullpage.moveTo(2);})
-				$(".gotodown").click(function(){$('#fullpage').fullpage.moveTo(4);})
+				
 				} else if(index == '4'){
 				$(".gotoup").fadeIn();
 				$(".gotodown").fadeIn();
-				$(".gotoup").click(function(){$('#fullpage').fullpage.moveTo(3);})
-				$(".gotodown").click(function(){$('#fullpage').fullpage.moveTo(5);})
-				$(".gotodown").fadeIn();
+				
 				} else if(index == '5'){
 				$(".gotoup").fadeIn();
 				$(".gotodown").fadeOut();
-				$(".gotoup").click(function(){$('#fullpage').fullpage.moveTo(4);})
+				
 				}
         }
 		
