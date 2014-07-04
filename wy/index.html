@@ -20,43 +20,6 @@
 <!--¿É±à¼­²¿·Ö-->
 <link rel="stylesheet" href="css/jquery.fullPage.css">
 <link type="text/css" rel="stylesheet" href="css/index.css" media="all" />
-<script src="js/jquery.min.js"></script>
-<script src="js/jquery.fullPage.js"></script>
-<script src="js/jquery.easings.min.js"></script>
-<!--<script charset="gb2312" src="js/index.js"></script>-->
-<script type="text/javascript">
-$(document).ready(function() {
-		$('#fullpage').fullpage({
-		anchors: ['page1', 'page2', 'page3', 'page4', 'page5'],
-		easing: 'swing',
-		afterLoad: function(anchorLink, index){
-            if(index == '1'){
-				$(".gotoup").fadeOut();
-				$(".gotodown").fadeIn();
-				
-            } else if(index == '2'){
-				$(".gotoup").fadeIn();
-				$(".gotodown").fadeIn();
-				
-				} else if(index == '3'){
-				$(".gotoup").fadeIn();
-				$(".gotodown").fadeIn();
-				
-				} else if(index == '4'){
-				$(".gotoup").fadeIn();
-				$(".gotodown").fadeIn();
-				
-				} else if(index == '5'){
-				$(".gotoup").fadeIn();
-				$(".gotodown").fadeOut();
-				
-				}
-        }
-		
-	});
-	
-});
-</script>
 </head>
 <body>
 <div class="title"></div>
@@ -89,6 +52,11 @@ $(document).ready(function() {
 </div>
 <div class="gotoup"></div>
 <div class="gotodown"></div>
+<script type="text/javascript" src="js/jquery.min.js"></script>  
+<script type="text/javascript" src="js/jquery-ui.min.js"></script> 
+<script type="text/javascript" src="js/jQueryRotate.js"></script> 
+<script type="text/javascript" src="js/jquery.fullPage.js"></script> 
+<script charset="gb2312" src="js/index.js"></script>
 <script charset="gb2312" src="js/btn.js"></script>
 </body>
 </html>
