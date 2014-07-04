@@ -5,6 +5,37 @@ var shareUrl = 'http://txhd.163.com';
 var sharePic = 'http://res.nie.netease.com/txhd/gw/14v2/pc/images/fenxiang.jpg';
 var winObj = $(window);
 
+$(document).ready(function() {
+		$('#fullPage').fullpage({
+		easing: 'swing',
+		afterLoad: function(anchorLink, index){
+            if(index == '1'){
+				$(".gotoup").fadeOut();
+				$(".gotodown").fadeIn();
+				
+            } else if(index == '2'){
+				$(".gotoup").fadeIn();
+				$(".gotodown").fadeIn();
+				
+				} else if(index == '3'){
+				$(".gotoup").fadeIn();
+				$(".gotodown").fadeIn();
+				
+				} else if(index == '4'){
+				$(".gotoup").fadeIn();
+				$(".gotodown").fadeIn();
+				
+				} else if(index == '5'){
+				$(".gotoup").fadeIn();
+				$(".gotodown").fadeOut();
+				
+				}
+        }
+		
+	});
+	
+});
+
 
     function validPhone(num) {
         if (/^(13|14|15|18)\d{9}$/.test(num)) {
