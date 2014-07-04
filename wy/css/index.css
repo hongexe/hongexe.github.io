@@ -10,6 +10,7 @@ body, html {background:#eeeeee;text-align: left;height: 100%;width: 100%;font-fa
 *{-webkit-tap-highlight-color:rgba(14,159,111,0);-webkit-touch-callout:none;}
 body{height:100%; overflow:hidden; width:640px; background:url('../images/bg.jpg') no-repeat;}
 #fullPage{ overflow:hidden;}
+.section{ width:640px; height:100%;}
 .title{ position:fixed; width:640px; height:82px; background:url(../images/title.jpg) no-repeat; top:0; left:0; z-index:10;}
 .bti{ position:fixed; width:640px; height:110px; background:url(../images/yybg.jpg) no-repeat; bottom:0; left:0; z-index:10;}
 .opeo{ position:absolute; width:612px; height:581px; background:url(../images/main.png) no-repeat; top:50%; margin-top:-290px; left:30px;}
