@@ -138,12 +138,13 @@ function WeiXinShareBtn() {
  if (typeof WeixinJSBridge == "undefined") { 
  alert("请用微信打开！"); 
  } else { 
- WeixinJSBridge.invoke('shareTimeline', { 
+/* WeixinJSBridge.invoke('shareTimeline', { 
  "title": shareTitle, 
  "link": shareUrl, 
  "desc": shareTxt, 
  "img_url": shareIco 
- }); 
+ }); */
+  alert("请点击右上角按钮分享到朋友圈！"); 
  } 
  }
 
