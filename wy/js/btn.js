@@ -3,7 +3,7 @@ var shareTitle = '《天下HD》官方网站7月开测召集令！';
 var shareTxt = '鸡哥一出，谁敢不从！《天下HD》7月开测召集令！即刻登录官网，抢先预约，争做大荒第一人！和我们一同开启小短腿们的世界传奇吧！';
 var shareUrl = 'http://txhd.163.com';
 var sharePic = 'http://res.nie.netease.com/txhd/gw/14v2/pc/images/fenxiang.jpg';
-var shareIco = 'http://res.nie.netease.com/txhd/gw/14v2/pc/images/fenxiang.jpg';
+var shareIco = 'http://res.nie.netease.com/txhd/gw/14v2/pc/images/wxfx.jpg';
 var winObj = $(window);
 
 $(document).ready(function() {
@@ -114,11 +114,11 @@ $('.gb').click(function () {
 
 	
 	$(".yx").click(function(){
-		var _uri = "http://open.yixin.im/share?appkey=yx3ae08a776bf04178a583cb745fb6aa0c&type=webpage&url="+encodeURIComponent(shareUrl)+'&title='+encodeURIComponent(shareTitle)+'&desc='+encodeURIComponent(shareTxt)+'&pic='+encodeURIComponent(sharePic);
+		var _uri = "http://open.yixin.im/share?appkey=yx3ae08a776bf04178a583cb745fb6aa0c&type=webpage&url="+encodeURIComponent(shareUrl)+'&title='+encodeURIComponent(shareTitle)+'&desc='+encodeURIComponent(shareTxt)+'&pic='+encodeURIComponent(shareIco);
 		window.location.href=_uri;
 	});
 	$(".wb").click(function(){
-		var _uri="http://service.weibo.com/share/share.php?c=nie&content=gb2312&source=nie&title=" + encodeURIComponent(shareTitle) + "&url=" + encodeURIComponent(shareUrl) + "&pic=" + encodeURIComponent(sharePic);
+		var _uri="http://service.weibo.com/share/share.php?c=nie&content=gb2312&source=nie&title=" + encodeURIComponent(shareTxt) + "&url=" + encodeURIComponent(shareUrl) + "&pic=" + encodeURIComponent(sharePic);
 		window.location.href=_uri;
 	});
 	$(".kj").click(function(){
