@@ -1,19 +1,19 @@
-// ¶¨Òå´æ·ÅÉú³ÉËæ»úÊıµÄÊı×é 
+// å®šä¹‰å­˜æ”¾ç”Ÿæˆéšæœºæ•°çš„æ•°ç»„ 
 var array = new Array();
-// Ñ­»·N´ÎÉú³ÉËæ»úÊı 
+// å¾ªç¯Næ¬¡ç”Ÿæˆéšæœºæ•° 
 for (var i = 0; i < 10; i++) {
-    // Ö»Éú³É10¸öËæ»úÊı 
+    // åªç”Ÿæˆ10ä¸ªéšæœºæ•° 
     if (array.length < 10) {
         generateRandom(10);
     } else {
         break;
     }
 }
-// Ñ­»·±éÀúËæ»úÊıÊı×é 
+// å¾ªç¯éå†éšæœºæ•°æ•°ç»„ 
 /*for(var i = 0 ; i < array.length; i++){ 
      alert(array[i]); 
 } */
-// Éú³ÉËæ»úÊıµÄ·½·¨ 
+// ç”Ÿæˆéšæœºæ•°çš„æ–¹æ³• 
 function generateRandom(count) {
         var rand = parseInt(Math.random() * count);
         for (var i = 0; i < array.length; i++) {
@@ -24,14 +24,14 @@ function generateRandom(count) {
         array.push(rand);
     }
 	
-//µ¹¼ÆÊ±
+//å€’è®¡æ—¶
 var timeline = 300;
 var js;
 function fun_timedown(time) {
     if (time == 'undefined') {
         time = 60;
     }
-    $("#timedown").html(time + "Ãë");
+    $("#timedown").html(time + "ç§’");
     timeline = timeline - 30;
     $("#process").animate({
         width: timeline + "px"
@@ -41,7 +41,7 @@ function fun_timedown(time) {
     if (time >= 0) {
         js = setTimeout("fun_timedown(" + time + ")", 1000);
     } else {
-        alert('µ¹¼ÆÊ±½áÊø£¡');
+        alert('å€’è®¡æ—¶ç»“æŸï¼');
     }
 }
 var result = parseInt(Math.random() * 3);
@@ -147,11 +147,11 @@ var ggl = {
 		}
 		if(j>=this.width*this.height*0.5){
 			if(result==0){
-			alert("¹§Ï²0£¡")
+			alert("æ­å–œ0ï¼")
 			}else if(result==1){
-				alert("¹§Ï²1£¡")
+				alert("æ­å–œ1ï¼")
 			}else if(result==2){
-			    alert("¹§Ï²2£¡")	
+			    alert("æ­å–œ2ï¼")	
 				}
 		}
 	},
