@@ -1,7 +1,7 @@
 var config = config || {};
 
 //是否有欢迎页面
-config.HasWelcome = false;
+config.HasWelcome = true;
 //总倒计时（秒）
 config.CountDown = 10;
 //总共需要打中多少个玑哥后才能开始触发概率
@@ -25,7 +25,12 @@ var wendouCallback = function () {
 
 //点击“我要激活码”按钮函数回调
 var wantKeyCallback = function (iphoneNumber) {
-	cc.log("我要激活码" + iphoneNumber);
+	if (!validPhone(iphoneNumber)) {
+            alert("手机号码有误，请填写正确！");
+        } else {
+            collectPho("txhd", iphoneNumber, window.location.href);
+        }
+	//cc.log("我要激活码" + iphoneNumber);
 };
 
 //点击“下载游戏”或者“天下HD下载”按钮函数回调
@@ -42,3 +47,31 @@ var resetGameCallback = function () {
 var shareWithFriendCallback = function () {
 	cc.log("分享好友 场外求助");
 }
+
+function validPhone(num) {
+        if (/^(13|14|15|18)\d{9}$/.test(num)) {
+            return true;
+        } else {
+            return false;
+        }
+    }
+function collectPho(game_name, phone, src) {
+        var os = 'ios';
+        if (/android/i.test(navigator.userAgent.toLowerCase())) {
+            os = 'android';
+        }
+        $.ajax({
+            url: "http://mobile-game-appoint.webapp.163.com/appoint/" + game_name + "/" + phone + "/" + os + "/?src=" + src,
+            async: false,
+            dataType: "jsonp",
+            success: function (result) {
+                if (result.status == "ok") {
+                    alert("验证码发送成功，请注意短信！");
+					$(".yy").hide();
+					$(".yz").show();
+                } else {
+                    alert(result.status);
+                }
+            }
+        });
+    }
