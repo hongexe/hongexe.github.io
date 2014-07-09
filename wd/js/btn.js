@@ -55,7 +55,7 @@ $(document).ready(function () {
     $("#q" + array[0]).fadeIn();
 	$(".wtnum").text("01");
 	//问题开始
-  /*  $("#q" + array[0]).children(".subwj").click(function () {
+  $("#q" + array[0]).children(".subwj").click(function () {
 		if($(".answer").val()==""){
 			alert("快选择答案，时间来不及啦！");
 			}else if($(".answer").val()=="0"){
@@ -67,7 +67,7 @@ $(document).ready(function () {
 				$("#q" + array[0]).hide();
 				$("#q" + array[1]).show();
 					}
-    });*/
+    });
 	//问题结束
 	//问题开始
     $("#q" + array[1]).children(".subwj").click(function () {
@@ -265,12 +265,13 @@ $(document).ready(function () {
     });
 	//问题结束
 	//问题开始
-    $("#q" + array[0]).children(".subwj").click(function () {
+    $("#q" + array[14]).children(".subwj").click(function () {
 		if($(".answer").val()==""){
 			alert("快选择答案，时间来不及啦！");
 			}else if($(".answer").val()=="0"){
+				clearTimeout(js);
 				$(".gdlay").fadeIn();
-		$(".success").animate({top:'80px'})
+				$(".fail").animate({top:'80px'});
 				}else if($(".answer").val()=="1"){
 					$(".gdlay").fadeIn();
 		$(".success").animate({top:'80px'});
