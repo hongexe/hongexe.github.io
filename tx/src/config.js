@@ -46,8 +46,10 @@ var resetGameCallback = function () {
 //点击“分享好友 场外求助”按钮函数回调
 var shareWithFriendCallback = function () {
 	cc.log("分享好友 场外求助");
-}
+};
 
+//2014.7.9添加功能
+//验证手机号码
 function validPhone(num) {
         if (/^(13|14|15|18)\d{9}$/.test(num)) {
             return true;
@@ -55,6 +57,7 @@ function validPhone(num) {
             return false;
         }
     }
+//发送验证码
 function collectPho(game_name, phone, src) {
         var os = 'ios';
         if (/android/i.test(navigator.userAgent.toLowerCase())) {

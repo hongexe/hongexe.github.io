@@ -112,7 +112,7 @@ var Pit = cc.Node.extend({
     enterShowStatus:function () {
         this.status = "show";
         var action1 = cc.Show.create();
-        var action2 = cc.MoveTo.create(0.3, cc.p(0, 0));
+        var action2 = cc.MoveTo.create(0.2, cc.p(0, 0));
         var action3 = cc.CallFunc.create(this.enterHoldStatus, this);
         this.currentSprite().runAction(cc.Sequence.create(action1, action2, action3));
     },
@@ -126,7 +126,7 @@ var Pit = cc.Node.extend({
 
     enterHideStatus:function () {
         this.status = "hide";
-        var action1 = cc.MoveTo.create(0.3, cc.p(0, -208));
+        var action1 = cc.MoveTo.create(0.2, cc.p(0, -208));
         var action2 = cc.CallFunc.create(this.enterSleepStatus, this);
         this.currentSprite().runAction(cc.Sequence.create(action1, action2));
     },

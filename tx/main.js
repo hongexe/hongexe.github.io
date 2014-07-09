@@ -64,10 +64,8 @@ var cocos2dApp = cc.Application.extend({
 });
 
 if (config.HasWelcome) {
-    cc.log("1111111111");
     var myApp = new cocos2dApp(WelcomeScene);
 } else {
-    cc.log("2222222222");
     var myApp = new cocos2dApp(MoleScene);
 }
 
