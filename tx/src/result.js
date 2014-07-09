@@ -12,6 +12,8 @@ var ResultLayer = cc.Layer.extend({
 
         this.result = result;
 
+        this.setAnchorPoint(0, 0);
+
         var bg = cc.Sprite.create("res/main/resultBg.png");
         bg.setPosition(332, 641);
         this.addChild(bg, 0);
@@ -38,14 +40,18 @@ var ResultLayer = cc.Layer.extend({
         	inputBg.setPosition(222, 407);
         	this.addChild(inputBg, 5);
 
-            this.inputPhone = cc.TextFieldTTF.create("请输入手机号码", cc.size(300, 50), cc.TEXT_ALIGNMENT_LEFT, "Arial", 24);
-            this.inputPhone.setPosition(280, 396);
-            this.inputPhone.setFontFillColor(cc.c3b(0, 0, 0));
+            var sp = cc.Scale9Sprite.create("res/main/inputBg.png", cc.rect(0, 0, 233, 47), cc.RectZero());
+            this.inputPhone = cc.EditBox.create(cc.size(210, 30), sp);
+            this.inputPhone.setFont("Arial", 24);
+            this.inputPhone.setPlaceHolder("请输入手机号码");
+            this.inputPhone.setFontColor(cc.c3b(0, 0, 0));
+            this.inputPhone.setPlaceholderFont("Arial", 24);
+            this.inputPhone.setPlaceholderFontColor(cc.c3b(0, 0, 0));
+            this.inputPhone.setInputMode(cc.EDITBOX_INPUT_MODE_PHONENUMBER);
+            this.inputPhone.setReturnType(cc.KEYBOARD_RETURNTYPE_DONE);
+            this.inputPhone.setPosition(235, 409);
+            this.inputPhone.setTouchEnabled(false);
             this.addChild(this.inputPhone, 6);
-
-        	// var inputPhone = cc.Sprite.create("res/main/inputPhone.png");
-        	// inputPhone.setPosition(220, 407);
-        	// this.addChild(inputPhone, 7);
 
         	this.button1 = cc.Sprite.create("res/main/winBtn1.png");
         	this.button1.setPosition(448, 405);
@@ -74,9 +80,6 @@ var ResultLayer = cc.Layer.extend({
         	this.addChild(this.button3, 3);
         }
 
-        this.setAnchorPoint(0, 0);
-        this.setTouchEnabled(true);
-
         return true;
     },
 
@@ -103,12 +106,6 @@ var ResultLayer = cc.Layer.extend({
 	                this.buttonScaled = true;
 	                return;
 	            }
-            }
-            if (this.inputPhone != null) {
-                if (cc.rectContainsPoint(this.inputPhone.getBoundingBox(), pos)) {
-                    this.inputPhone.attachWithIME();
-                    return;
-                }
             }
         }
     },
@@ -140,7 +137,7 @@ var ResultLayer = cc.Layer.extend({
                 if (this.selectButton == this.button1) {
                     if (cc.rectContainsPoint(this.selectButton.getBoundingBox(), pos)) {
                     	if (this.result) {
-                    		wantKeyCallback(this.inputPhone.getString());
+                    		wantKeyCallback(this.inputPhone.getText());
                     	} else {
                     		resetGameCallback();
                     	}

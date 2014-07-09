@@ -329,7 +329,16 @@ var MoleLayer = cc.Layer.extend({
 
         var action1 = cc.MoveTo.create(0.3, cc.p(0, -50));
         var action2 = cc.MoveTo.create(0.05, cc.p(0, 0));
-        resultLayer.runAction(cc.Sequence.create(action1, action2));
+        var resetEditBox = function () {
+            resultLayer.setTouchEnabled(true);
+
+            if (resultLayer.inputPhone != null) {
+                resultLayer.inputPhone.setPosition(235, 409);
+                resultLayer.inputPhone.setTouchEnabled(true);
+            }
+        };
+        var action3 = cc.CallFunc.create(resetEditBox, resultLayer);
+        resultLayer.runAction(cc.Sequence.create(action1, action2, action3));
     },
 
     onTouchesBegan:function (touches, event) {
@@ -363,7 +372,7 @@ var MoleLayer = cc.Layer.extend({
                                         this.handleResult(false);
                                     }
                                 } else {
-                                    cc.AudioEngine.getInstance().playEffect("res/jige.wav");
+                                    // cc.AudioEngine.getInstance().playEffect("res/jige.wav");
                                     if (this.num >= config.TargetCount) {
                                         if (Math.random() < config.KeyProbability) {
                                             this.gameStatus = "getKey";

@@ -127,7 +127,7 @@
                 <file name="jsloader.js"/>
             </sources>
             <!-- extensions -->
-            <sources dir="${basedir}/../extensions">
+            <sources dir="${basedir}/extensions">
                 <file name="CCBReader/CCBReaderUtil.js"/>
                 <file name="CCBReader/CCBValue.js"/>
                 <file name="CCBReader/CCBKeyframe.js"/>
