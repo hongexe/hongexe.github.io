@@ -269,9 +269,8 @@ $(document).ready(function () {
 		if($(".answer").val()==""){
 			alert("快选择答案，时间来不及啦！");
 			}else if($(".answer").val()=="0"){
-				clearTimeout(js);
 				$(".gdlay").fadeIn();
-				$(".fail").animate({top:'80px'});
+		$(".success").animate({top:'80px'})
 				}else if($(".answer").val()=="1"){
 					$(".gdlay").fadeIn();
 		$(".success").animate({top:'80px'});
