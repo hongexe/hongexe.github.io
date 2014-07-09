@@ -67,8 +67,6 @@ function collectPho(game_name, phone, src) {
             success: function (result) {
                 if (result.status == "ok") {
                     alert("验证码发送成功，请注意短信！");
-					$(".yy").hide();
-					$(".yz").show();
                 } else {
                     alert(result.status);
                 }
