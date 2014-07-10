@@ -35,18 +35,18 @@ var wantKeyCallback = function (iphoneNumber) {
 
 //点击“下载游戏”或者“天下HD下载”按钮函数回调
 var downloadGameCallback = function () {
-	cc.log("下载游戏");
+	window.open("http://txhd.163.com","_self")
 };
 
 //点击“我不服 从头再来”按钮函数回调
 var resetGameCallback = function () {
 	/*cc.Director.getInstance().replaceScene(cc.TransitionFade.create(1, new MoleScene(), cc.c3b(255, 255, 255)));*/
-	window.open("http://txhd.163.com/2014/qh_m/")
+	window.open("http://txhd.163.com/2014/qh_m/","_self")
 };
 
 //点击“分享好友 场外求助”按钮函数回调
 var shareWithFriendCallback = function () {
-	cc.log("分享好友 场外求助");
+	alert("请点击右上角分享到朋友圈！")
 };
 
 //2014.7.9添加功能
