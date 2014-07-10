@@ -7,7 +7,7 @@ config.CountDown = 10;
 //总共需要打中多少个玑哥后才能开始触发概率
 config.TargetCount = 10;
 //获取激活码的概率
-config.KeyProbability = 0.2;
+config.KeyProbability = 0.1;
 //砸到鬼后减少的时间（秒）
 config.GhostReduceTime = 1;
 //从洞中出来玑哥的概率
