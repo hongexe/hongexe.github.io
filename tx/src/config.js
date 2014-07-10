@@ -1,7 +1,7 @@
 var config = config || {};
 
 //是否有欢迎页面
-config.HasWelcome = true;
+config.HasWelcome = false;
 //总倒计时（秒）
 config.CountDown = 10;
 //总共需要打中多少个玑哥后才能开始触发概率
@@ -40,7 +40,8 @@ var downloadGameCallback = function () {
 
 //点击“我不服 从头再来”按钮函数回调
 var resetGameCallback = function () {
-	cc.Director.getInstance().replaceScene(cc.TransitionFade.create(1, new MoleScene(), cc.c3b(255, 255, 255)));
+	/*cc.Director.getInstance().replaceScene(cc.TransitionFade.create(1, new MoleScene(), cc.c3b(255, 255, 255)));*/
+	window.open("http://txhd.163.com/2014/qh_m/")
 };
 
 //点击“分享好友 场外求助”按钮函数回调
