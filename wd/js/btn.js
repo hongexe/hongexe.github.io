@@ -2,10 +2,10 @@
 // 定义存放生成随机数的数组 
 var array = new Array();
 // 循环N次生成随机数 
-for (var i = 0; i < 15; i++) {
+for (var i = 0; i < 10; i++) {
     // 只生成10个随机数 
-    if (array.length < 15) {
-        generateRandom(55);
+    if (array.length < 10) {
+        generateRandom(89);
     } else {
         break;
     }
@@ -30,10 +30,10 @@ var timeline = 390;
 var js;
 function fun_timedown(time) {
     if (time == 'undefined') {
-        time = 15;
+        time = 20;
     }
     $(".gnum").css({"background":"url(images/"+time+".png)"});
-    timeline = timeline - 24;
+    timeline = timeline - 20;
     $(".bloodjs").animate({
         left: timeline + "px"
     })
@@ -51,10 +51,10 @@ var result = parseInt(Math.random() * 3);
 $(document).ready(function () {
 	
 	ggl.init(document.getElementById('myCanvas'),405, 120, 'images/prize'+result+'.jpg');
-	$(".tipms").animate({opacity:'0'},2000,function(){$(".ready").animate({opacity:'1',top:'40px'},500);$(".ready").animate({opacity:'0'},500,function(){$(".go").animate({opacity:'1',top:'35px'},500);$(".go").animate({opacity:'0'},500,function(){fun_timedown(15);$(".tipks").fadeOut();})});})
+	$(".tipms").animate({opacity:'0'},2000,function(){$(".ready").animate({opacity:'1',top:'40px'},500);$(".ready").animate({opacity:'0'},500,function(){$(".go").animate({opacity:'1',top:'35px'},500);$(".go").animate({opacity:'0'},500,function(){fun_timedown(20);$(".tipks").fadeOut();})});})
     $("#q" + array[0]).fadeIn();
 	$(".wtnum").text("01");
-	//问题开始
+/*	//问题开始
   $("#q" + array[0]).children(".subwj").click(function () {
 		if($(".answer").val()==""){
 			alert("快选择答案，时间来不及啦！");
@@ -68,214 +68,163 @@ $(document).ready(function () {
 				$("#q" + array[1]).show();
 					}
     });
-	//问题结束
+	//问题结束*/
 	//问题开始
-    $("#q" + array[1]).children(".subwj").click(function () {
-		if($(".answer").val()==""){
-			alert("快选择答案，时间来不及啦！");
-			}else if($(".answer").val()=="0"){
+  $("#q" + array[0]).children(".dd").click(function () {
+	
+				$(".wtnum").text("02")
+				$("#q" + array[0]).hide();
+				$("#q" + array[1]).show();
+					
+    });
+	$("#q" + array[0]).children(".cd").click(function () {
+		
 				clearTimeout(js);
 				$(".gdlay").fadeIn();
 				$(".fail").animate({top:'80px'});
-				}else if($(".answer").val()=="1"){
+				
+    });
+	//问题结束
+	//问题开始
+  $("#q" + array[1]).children(".dd").click(function () {
+	
 				$(".wtnum").text("03")
 				$("#q" + array[1]).hide();
 				$("#q" + array[2]).show();
-					}
+					
     });
-	//问题结束
-	//问题开始
-    $("#q" + array[2]).children(".subwj").click(function () {
-		if($(".answer").val()==""){
-			alert("快选择答案，时间来不及啦！");
-			}else if($(".answer").val()=="0"){
+	$("#q" + array[1]).children(".cd").click(function () {
+		
 				clearTimeout(js);
 				$(".gdlay").fadeIn();
 				$(".fail").animate({top:'80px'});
-				}else if($(".answer").val()=="1"){
+				
+    });
+	//问题结束
+	//问题开始
+  $("#q" + array[2]).children(".dd").click(function () {
+	
 				$(".wtnum").text("04")
 				$("#q" + array[2]).hide();
 				$("#q" + array[3]).show();
-					}
+					
     });
-	//问题结束
-	//问题开始
-    $("#q" + array[3]).children(".subwj").click(function () {
-		if($(".answer").val()==""){
-			alert("快选择答案，时间来不及啦！");
-			}else if($(".answer").val()=="0"){
+	$("#q" + array[2]).children(".cd").click(function () {
+		
 				clearTimeout(js);
 				$(".gdlay").fadeIn();
 				$(".fail").animate({top:'80px'});
-				}else if($(".answer").val()=="1"){
+				
+    });
+	//问题结束
+	//问题开始
+  $("#q" + array[3]).children(".dd").click(function () {
+	
 				$(".wtnum").text("05")
 				$("#q" + array[3]).hide();
 				$("#q" + array[4]).show();
-					}
+					
     });
-	//问题结束
-	//问题开始
-    $("#q" + array[4]).children(".subwj").click(function () {
-		if($(".answer").val()==""){
-			alert("快选择答案，时间来不及啦！");
-			}else if($(".answer").val()=="0"){
+	$("#q" + array[3]).children(".cd").click(function () {
+		
 				clearTimeout(js);
 				$(".gdlay").fadeIn();
 				$(".fail").animate({top:'80px'});
-				}else if($(".answer").val()=="1"){
+				
+    });
+	//问题结束
+	//问题开始
+  $("#q" + array[4]).children(".dd").click(function () {
+	
 				$(".wtnum").text("06")
 				$("#q" + array[4]).hide();
 				$("#q" + array[5]).show();
-					}
+					
     });
-	//问题结束
-	//问题开始
-    $("#q" + array[5]).children(".subwj").click(function () {
-		if($(".answer").val()==""){
-			alert("快选择答案，时间来不及啦！");
-			}else if($(".answer").val()=="0"){
+	$("#q" + array[4]).children(".cd").click(function () {
+		
 				clearTimeout(js);
 				$(".gdlay").fadeIn();
 				$(".fail").animate({top:'80px'});
-				}else if($(".answer").val()=="1"){
+				
+    });
+	//问题结束
+	//问题开始
+  $("#q" + array[5]).children(".dd").click(function () {
+	
 				$(".wtnum").text("07")
 				$("#q" + array[5]).hide();
 				$("#q" + array[6]).show();
-					}
+					
     });
-	//问题结束
-	//问题开始
-    $("#q" + array[6]).children(".subwj").click(function () {
-		if($(".answer").val()==""){
-			alert("快选择答案，时间来不及啦！");
-			}else if($(".answer").val()=="0"){
+	$("#q" + array[5]).children(".cd").click(function () {
+		
 				clearTimeout(js);
 				$(".gdlay").fadeIn();
 				$(".fail").animate({top:'80px'});
-				}else if($(".answer").val()=="1"){
+				
+    });
+	//问题结束
+	//问题开始
+  $("#q" + array[6]).children(".dd").click(function () {
+	
 				$(".wtnum").text("08")
 				$("#q" + array[6]).hide();
 				$("#q" + array[7]).show();
-					}
+					
     });
-	//问题结束
-	//问题开始
-    $("#q" + array[7]).children(".subwj").click(function () {
-		if($(".answer").val()==""){
-			alert("快选择答案，时间来不及啦！");
-			}else if($(".answer").val()=="0"){
+	$("#q" + array[6]).children(".cd").click(function () {
+		
 				clearTimeout(js);
 				$(".gdlay").fadeIn();
 				$(".fail").animate({top:'80px'});
-				}else if($(".answer").val()=="1"){
+				
+    });
+	//问题结束
+	//问题开始
+  $("#q" + array[7]).children(".dd").click(function () {
+	
 				$(".wtnum").text("09")
 				$("#q" + array[7]).hide();
 				$("#q" + array[8]).show();
-					}
+					
     });
-	//问题结束
-	//问题开始
-    $("#q" + array[8]).children(".subwj").click(function () {
-		if($(".answer").val()==""){
-			alert("快选择答案，时间来不及啦！");
-			}else if($(".answer").val()=="0"){
+	$("#q" + array[7]).children(".cd").click(function () {
+		
 				clearTimeout(js);
 				$(".gdlay").fadeIn();
 				$(".fail").animate({top:'80px'});
-				}else if($(".answer").val()=="1"){
+				
+    });
+	//问题结束
+	//问题开始
+  $("#q" + array[8]).children(".dd").click(function () {
+	
 				$(".wtnum").text("10")
 				$("#q" + array[8]).hide();
 				$("#q" + array[9]).show();
-					}
+					
     });
-	//问题结束
-	//问题开始
-    $("#q" + array[9]).children(".subwj").click(function () {
-		if($(".answer").val()==""){
-			alert("快选择答案，时间来不及啦！");
-			}else if($(".answer").val()=="0"){
+	$("#q" + array[8]).children(".cd").click(function () {
+		
 				clearTimeout(js);
 				$(".gdlay").fadeIn();
 				$(".fail").animate({top:'80px'});
-				}else if($(".answer").val()=="1"){
-				$(".wtnum").text("11")
-				$("#q" + array[9]).hide();
-				$("#q" + array[10]).show();
-					}
+				
     });
 	//问题结束
 	//问题开始
-    $("#q" + array[10]).children(".subwj").click(function () {
-		if($(".answer").val()==""){
-			alert("快选择答案，时间来不及啦！");
-			}else if($(".answer").val()=="0"){
-				clearTimeout(js);
-				$(".gdlay").fadeIn();
-				$(".fail").animate({top:'80px'});
-				}else if($(".answer").val()=="1"){
-				$(".wtnum").text("12")
-				$("#q" + array[10]).hide();
-				$("#q" + array[11]).show();
-					}
+  $("#q" + array[9]).children(".dd").click(function () {
+	            $(".gdlay").fadeIn();
+				$(".success").animate({top:'80px'});
+					
     });
-	//问题结束
-	//问题开始
-    $("#q" + array[11]).children(".subwj").click(function () {
-		if($(".answer").val()==""){
-			alert("快选择答案，时间来不及啦！");
-			}else if($(".answer").val()=="0"){
+	$("#q" + array[9]).children(".cd").click(function () {
+		
 				clearTimeout(js);
 				$(".gdlay").fadeIn();
 				$(".fail").animate({top:'80px'});
-				}else if($(".answer").val()=="1"){
-				$(".wtnum").text("13")
-				$("#q" + array[11]).hide();
-				$("#q" + array[12]).show();
-					}
-    });
-	//问题结束
-	//问题开始
-    $("#q" + array[12]).children(".subwj").click(function () {
-		if($(".answer").val()==""){
-			alert("快选择答案，时间来不及啦！");
-			}else if($(".answer").val()=="0"){
-				clearTimeout(js);
-				$(".gdlay").fadeIn();
-				$(".fail").animate({top:'80px'});
-				}else if($(".answer").val()=="1"){
-				$(".wtnum").text("14")
-				$("#q" + array[12]).hide();
-				$("#q" + array[13]).show();
-					}
-    });
-	//问题结束
-	//问题开始
-    $("#q" + array[13]).children(".subwj").click(function () {
-		if($(".answer").val()==""){
-			alert("快选择答案，时间来不及啦！");
-			}else if($(".answer").val()=="0"){
-				clearTimeout(js);
-				$(".gdlay").fadeIn();
-				$(".fail").animate({top:'80px'});
-				}else if($(".answer").val()=="1"){
-				$(".wtnum").text("15")
-				$("#q" + array[13]).hide();
-				$("#q" + array[14]).show();
-					}
-    });
-	//问题结束
-	//问题开始
-    $("#q" + array[14]).children(".subwj").click(function () {
-		if($(".answer").val()==""){
-			alert("快选择答案，时间来不及啦！");
-			}else if($(".answer").val()=="0"){
-				clearTimeout(js);
-				$(".gdlay").fadeIn();
-				$(".fail").animate({top:'80px'});
-				}else if($(".answer").val()=="1"){
-					$(".gdlay").fadeIn();
-		$(".success").animate({top:'80px'});
-					}
+				
     });
 	//问题结束
 	
@@ -288,11 +237,11 @@ $(document).ready(function () {
     });
 	}
 	
-	$(".wt .dd").mousedown(function () {
+	$(".wt .dd").on("vmousedown",function(){
         $(this).siblings(".dd, .cd").css("background-position", "0 0");
 		$(this).css("background-position", "0 -81px");
     });
-	$(".wt .cd").mousedown(function () {
+	$(".wt .cd").on("vmousedown",function(){
         $(this).siblings(".dd, .cd").css("background-position", "0 0");
 		$(this).css("background-position", "0 -81px");
     });
