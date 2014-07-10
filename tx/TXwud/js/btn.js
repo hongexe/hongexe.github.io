@@ -24,14 +24,6 @@ function fun_timedown(time) {
 
 
 
-	
-
-	
-
-		$('.download3').click(function(){
-		alert("¾´ÇëÆÚ´ý£¡");
-		});
-	
 
 
 
@@ -65,7 +57,7 @@ function validPhone(num) {
 
     function collectPho(phone) {
         $.ajax({
-            url: "http://mobile-code.dev.webapp.163.com:5354/cgi/get_sn?mobile_num="+ phone,
+            url: "http://s.webcgi.163.com/mobile-code/get_sn?mobile_num="+ phone,
             async: false,
             dataType: "jsonp",
             success: function (result) {
