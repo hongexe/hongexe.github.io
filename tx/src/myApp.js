@@ -239,16 +239,23 @@ var MoleLayer = cc.Layer.extend({
             var action3 = cc.Hide.create();
             var action4 = cc.CallFunc.create(this.startGame, this);
             this.readyLayer.goSprite.runAction(cc.Sequence.create(action1, action2, action3, action4));
-        }
+        };
+
+        var showReady = function () {
+            this.readyLayer.tipTxt.setVisible(false);
+            this.readyLayer.readySprite.setVisible(true);
+            var action1 = cc.ScaleTo.create(0.3, 1);
+            var action2 = cc.DelayTime.create(1);
+            var action3 = cc.ScaleTo.create(0.3, 0);
+            var action4 = cc.Hide.create();
+            var action5 = cc.CallFunc.create(showGo, this);
+            this.readyLayer.readySprite.runAction(cc.Sequence.create(action1, action2, action3, action4, action5));
+        };
 
         var action1 = cc.DelayTime.create(2);
-        var action2 = cc.Show.create();
-        var action3 = cc.ScaleTo.create(0.3, 1);
-        var action4 = cc.DelayTime.create(1);
-        var action5 = cc.ScaleTo.create(0.3, 0);
-        var action6 = cc.Hide.create();
-        var action7 = cc.CallFunc.create(showGo, this);
-        this.readyLayer.readySprite.runAction(cc.Sequence.create(action1, action2, action3, action4, action5, action6, action7));
+        var action2 = cc.FadeOut.create(0.3);
+        var action3 = cc.CallFunc.create(showReady, this);
+        this.readyLayer.tipTxt.runAction(cc.Sequence.create(action1, action2, action3));
 
         return true;
     },
