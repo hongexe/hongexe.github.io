@@ -27,6 +27,8 @@ body{height:100%; overflow:hidden;}
 .wttxt{ position:relative; width:365px; height:85px; font-size:24px; font-weight:bold; margin-left:70px;}
 .dd{ position:relative; width:440px; height:81px; line-height:81px; padding-left:55px; font-size:24px; background:url(../images/select.png) no-repeat;}
 .cd{ position:relative; width:440px; height:81px; line-height:81px; padding-left:55px; font-size:24px;background:url(../images/select.png) no-repeat;}
+.dd:active{ background-position:0 -81px;}
+.cd:active{ background-position:0 -81px;}
 .subwj{ position:relative; width:252px; height:86px; margin-top:10px; }
 
 .fail{ position:absolute; width:578px; height:787px; background:url(../images/fail.png); top:-800px; z-index:51; left:47px;}
