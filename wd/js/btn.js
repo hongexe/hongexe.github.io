@@ -237,18 +237,18 @@ $(document).ready(function () {
     });
 	}
 	
-	$(".wt .dd").on("vmousedown",function(){
+	$(".wt .dd").mousedown(function(){
         $(this).siblings(".dd, .cd").css("background-position", "0 0");
 		$(this).css("background-position", "0 -81px");
     });
-	$(".wt .cd").on("vmousedown",function(){
+	$(".wt .cd").mousedown(function(){
         $(this).siblings(".dd, .cd").css("background-position", "0 0");
 		$(this).css("background-position", "0 -81px");
     });
 	$('.share, .share2').click(function(){
 		alert("«Îµ„ª˜”“…œΩ«∑÷œÌµΩ≈Û”—»¶");
 		})
-		$('.download, .download2').click(function(){
+		$('.download2').click(function(){
 		alert("æ¥«Î∆⁄¥˝£°");
 		})
 	
