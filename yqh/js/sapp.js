@@ -194,7 +194,7 @@ sapp.share = function(para){
 		   title : document.title,
 		    desc : document.title,
 		     url : document.location.href,
-		     img : "images/share.jpg",
+		     img : "http://hongexe.github.io/yqh/images/share.jpg",
 		   width : 100,
 		  height : 100,
 		   appid : "",
