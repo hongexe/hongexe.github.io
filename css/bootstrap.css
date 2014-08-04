@@ -6092,7 +6092,7 @@ td.visible-lg {
     display: table-cell !important;
   }
   .bannerpic { display:none; }
-  .bannerlist, #guanbanner h2, #guanbanner h1, #guanbanner p 　{ text-align:center; }
+  
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
