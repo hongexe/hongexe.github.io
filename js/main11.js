@@ -56,6 +56,6 @@ $(".showmore").click(function(){
 		$("#overlay").fadeOut();
 	});
 
-$('#indexgs').parallax();
+
 
 })
