@@ -58,4 +58,12 @@ $(".showmore").click(function(){
 
 $('#indexgs').parallax();
 
+$("#newsContent").niceScroll({
+			scrollspeed:80,
+			cursorcolor:"#379f7a",
+			cursorborderradius:4,
+			cursorwidth:'5px',
+			cursorborder:'0px solid #555'
+		});
+
 })
