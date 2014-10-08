@@ -9,26 +9,41 @@
 <script type="text/javascript">
 $(document).ready(function(){
 
-		$("body").niceScroll({
+function is_iPad(){  
+    var ua = navigator.userAgent.toLowerCase();  
+    if(ua.match(/iPad/i)=="ipad") {  
+        return true;  
+    } else {  
+        return false;  
+    }  
+}
+if(is_iPad()){
+$("#contentwrap").css({"height":"600px","top":"0"});
+} else {
+$("#contentwrap").css({"height":parseInt($(window).height()-40),"top":"0"});	
+	}
+
+		$("#contentwrap").niceScroll({
 			scrollspeed:80,
 			cursorcolor:"#379f7a",
 			cursorborderradius:4,
 			cursorwidth:'5px',
-			cursorborder:'0px solid #555'
+			cursorborder:'0px solid #555',
+			cursoropacitymin: 1
 		});
 })
 </script>
 
 </head>
 <body>
+<div id="contentwrap">
 <div class="menu">
 <ul>
-<li><a class="click" href="web1.html">影视作品一</a></li>
-<li><a href="javascript:void(0);">动画作品二</a></li>
+<li><a class="click" href="movie1.html">影视作品一</a></li>
+<li><a href="movie2.html">影视作品二</a></li>
 </ul>
 </div>
-<div>
-<div style=" clear:both; height:20px;"></div>
+<div class="content">
 <a href="http://v.youku.com/v_show/id_XNjQ1MTEzNTY0.html" target="_new"><img src="workpic/m0.jpg" width="600" height="292" /></a>
 <div class="describle">
 <h1>非遗申报片《杭州天竺筷》</h1><br />
@@ -41,6 +56,7 @@ $(document).ready(function(){
 <div style="clear:both; height:50px;"></div>
 <div style="font-size:18px; text-align:center; height:100px;">"我们是靠手来记忆的。"——一位传统手工艺人这样说过<br /></div>
 
+</div>
 </div>
 </body>
 </html>

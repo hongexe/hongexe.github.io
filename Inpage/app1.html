@@ -8,20 +8,34 @@
 <script type="text/javascript" src="../js/jquery.nicescroll.js"></script>
 <script type="text/javascript">
 $(document).ready(function(){
+function is_iPad(){  
+    var ua = navigator.userAgent.toLowerCase();  
+    if(ua.match(/iPad/i)=="ipad") {  
+        return true;  
+    } else {  
+        return false;  
+    }  
+}
+if(is_iPad()){
+$("#contentwrap").css({"height":"600px","top":"0"});
+} else {
+$("#contentwrap").css({"height":parseInt($(window).height()-40),"top":"0"});	
+	}
 
-		$("body").niceScroll({
+		$("#contentwrap").niceScroll({
 			scrollspeed:80,
 			cursorcolor:"#379f7a",
 			cursorborderradius:4,
 			cursorwidth:'5px',
-			cursorborder:'0px solid #555'
+			cursorborder:'0px solid #555',
+			cursoropacitymin: 1
 		});
 })
 </script>
 
 </head>
-
 <body>
+<div id="contentwrap">
 <div class="menu">
 <ul>
 <li><a class="click" href="app1.html">App作品一</a></li>
@@ -29,21 +43,11 @@ $(document).ready(function(){
 <li><a href="app3.html">App作品三</a></li>
 </ul>
 </div>
-<div>
-<div style=" clear:both; height:20px;"></div>
-<img src="workpic/ring1.jpg" width="600" height="292" />
-<div class="describle">
-<h1>Ring异地恋app</h1><br />
-<strong>说明：</strong>Ring是一款为异地恋情侣设计的互动应用，通过Ring感受彼此，记录相爱的心情。APP主要风格是文艺小清新，受众群小但很集中，粘性大。<br />
-<strong>职务/角色：</strong>交互设计、界面设计<br />
-<strong>项目职责：</strong>项目发起人，提出应用的创意构思，负责交互设计，界面设计
+<div class="content">
+<img src="workpic/app31.jpg" width="800" height="1541" />
+<img src="workpic/app32.jpg" width="800" height="1541" />
+<img src="workpic/app33.jpg" width="800" height="1257" />
 </div>
-<div style="clear:both; height:50px;"></div>
-<img src="workpic/ring0.jpg" width="850" height="638" />
-<img src="workpic/ring3.jpg" width="850" height="638" />
-<img src="workpic/ring4.jpg" width="850" height="638" />
-<img src="workpic/ring2.jpg" width="850" height="638" />
-
 </div>
 </body>
 </html>

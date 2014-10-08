@@ -7,16 +7,12 @@ input{outline:none;}
 body{font-family:Arial,"微软雅黑","宋体";}
 ul,li{list-style:none;}
 body {
-	padding:0px;
 	padding-top:20px;
-	padding-left:180px;
-	margin:0px;
 	background-color:#fff;
 	font-family: "微软雅黑", "黑体";
 	font-size: 14px;
 	color:#888;
 	line-height:25px;
-	height:3000px;
 }
 a{ 
 color:#282828;
@@ -51,7 +47,8 @@ h1{
 	position:absolute;
 	width:100px;
 	height:38px;
-	text-align:center;
+	text-align:left;
+	padding-left:10px;
 	padding-top:12px;
 	border-bottom:1px solid #282828;
 	}
@@ -67,9 +64,19 @@ img.toppic{
 	margin-right:20px;
 	}
 .describle{
-	float:right;
-	margin-right:40px;
+	position:absolute;
+	left:770px;
+	top:20px;
 	width:210px;
 	border-top:1px solid #282828;
 	padding-top:10px;
+	}
+	
+.content{
+	margin-left:140px;
+}
+
+#contentwrap{
+	position:relative;
+	height:650px;
 	}

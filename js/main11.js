@@ -45,7 +45,7 @@ $(document).ready(function() {
 
 /*open pop*/
 $(".showmore").click(function(){
-		$("#ifr").height($(window).height()-50).attr("src",$(this).data("href"));
+		$("#ifr").height($(window).height()-80).attr("src",$(this).data("href"));
 		$("#overlay").fadeIn();
 		$("#newsContent").css({"height":parseInt($(window).height()),"top":"0"});
 		$("#newsContent").fadeIn();
@@ -55,7 +55,5 @@ $(".showmore").click(function(){
 		$('#newsContent').fadeOut();
 		$("#overlay").fadeOut();
 	});
-
-
 
 })
