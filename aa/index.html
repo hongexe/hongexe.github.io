@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
+<title>无标题文档</title>
+<script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.8.0.js"></script>
+<script src="http://wj.163.com/download/wj_client_ver.js"></script>
+</head>
+
+<body>
+<h1>fjapfka[fka[fk</h1>
+<iframe id="ceshi1" name="ceshi1" src="b.html"></iframe>
+
+
+<script type="text/javascript">
+/*
+$(document).ready(function(){
+	var content = $("#ceshi1").contents();
+	console.log(document.getElementById('ceshi1').contentWindow.document);
+});
+*/
+/*var iframe = $("#ceshi1")[0];
+if (iframe.attachEvent){  // for IE
+    iframe.attachEvent("onload", function(){
+	console.log(document.getElementById('ceshi1').contentWindow.document);
+    });
+} else {
+    iframe.onload = function(){
+	console.log(document.getElementById('ceshi1').contentWindow.document);
+    };
+}*/
+$(document).ready(function(){
+	
+alert($("#ceshi1").contents().find("#txt").text());
+
+});
+</script>
+</body>
+</html>
