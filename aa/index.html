@@ -30,7 +30,12 @@ if (iframe.attachEvent){  // for IE
     };
 }*/
 
-$("#ceshi2").html($("#ceshi1").contents().find("#txt").text());
+$.ajax({
+    'url':'test/b.html',
+    'type':'get'
+}).done(function(content){
+    $("#ceshi2").html(content);
+});
 
 
 </script>
