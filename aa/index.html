@@ -31,7 +31,12 @@ if (iframe.attachEvent){  // for IE
 }*/
 $(document).ready(function(){
 	
-alert($("#ceshi1").contents().find("#txt").text());
+$.ajax({
+    'url':'test/b.html',
+    'type':'get'
+}).done(function(content){
+    console.log(content);
+});
 
 });
 </script>
