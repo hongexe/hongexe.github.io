@@ -1,13 +1,15 @@
 // JavaScript Document
-var shareTitle = '《天下HD》官方网站7月开测召集令！';
-var shareTxt = '鸡哥一出，谁敢不从！《天下HD》7月开测召集令！即刻登录官网，抢先预约，争做大荒第一人！和我们一同开启小短腿们的世界传奇吧！';
-var shareUrl = 'http://txhd.163.com';
-var sharePic = 'http://res.nie.netease.com/txhd/gw/14v2/pc/images/fenxiang.jpg';
-var shareIco = 'http://res.nie.netease.com/txhd/gw/14v2/pc/images/wxfx.jpg';
+var shareTitle = '';
+var shareTxt = '';
+var shareUrl = '';
+var sharePic = '';
+var shareIco = '';
 var winObj = $(window);
 
 $(document).ready(function() {
 		$('#fullPage').fullpage({
+		anchors: ['page1', 'page2', 'page3', 'page4', 'page5', 'page6'],
+		menu: '#menu',
 		easing: 'swing',
 		afterLoad: function(anchorLink, index){
             if(index == '1'){
