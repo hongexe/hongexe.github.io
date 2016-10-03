@@ -32,6 +32,11 @@ $(document).ready(function() {
 				
 				} else if(index == '5'){
 				
+				$(".gotodown").fadeIn();
+				$(".rtaudio").fadeIn();
+				
+				} else if(index == '6'){
+				
 				$(".gotodown").fadeOut();
 				$(".rtaudio").fadeIn();
 				
@@ -41,6 +46,8 @@ $(document).ready(function() {
 	});
 	
 });
+
+$(".rtaudio").fadeOut();
 
 $("#music_btn2").addClass("stop");
     
