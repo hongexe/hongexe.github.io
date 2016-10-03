@@ -1,6 +1,6 @@
 // JavaScript Document
-var shareTitle = '¡¶ÌìÏÂHD¡·¹Ù·½ÍøÕ¾7ÔÂ¿ª²âÕÙ¼¯Áî£¡';
-var shareTxt = '¼¦¸çÒ»³ö£¬Ë­¸Ò²»´Ó£¡¡¶ÌìÏÂHD¡·7ÔÂ¿ª²âÕÙ¼¯Áî£¡¼´¿ÌµÇÂ¼¹ÙÍø£¬ÇÀÏÈÔ¤Ô¼£¬Õù×ö´ó»ÄµÚÒ»ÈË£¡ºÍÎÒÃÇÒ»Í¬¿ªÆôĞ¡¶ÌÍÈÃÇµÄÊÀ½ç´«Ææ°É£¡';
+var shareTitle = 'ã€Šå¤©ä¸‹HDã€‹å®˜æ–¹ç½‘ç«™7æœˆå¼€æµ‹å¬é›†ä»¤ï¼';
+var shareTxt = 'é¸¡å“¥ä¸€å‡ºï¼Œè°æ•¢ä¸ä»ï¼ã€Šå¤©ä¸‹HDã€‹7æœˆå¼€æµ‹å¬é›†ä»¤ï¼å³åˆ»ç™»å½•å®˜ç½‘ï¼ŒæŠ¢å…ˆé¢„çº¦ï¼Œäº‰åšå¤§è’ç¬¬ä¸€äººï¼å’Œæˆ‘ä»¬ä¸€åŒå¼€å¯å°çŸ­è…¿ä»¬çš„ä¸–ç•Œä¼ å¥‡å§ï¼';
 var shareUrl = 'http://txhd.163.com';
 var sharePic = 'http://res.nie.netease.com/txhd/gw/14v2/pc/images/fenxiang.jpg';
 var shareIco = 'http://res.nie.netease.com/txhd/gw/14v2/pc/images/wxfx.jpg';
@@ -35,81 +35,15 @@ $(document).ready(function() {
 	
 });
 
-$('.sbtn').click(function () {
-        $('.share').fadeIn();
-});
-$('.gb').click(function () {
-        $('.share').fadeOut();
-});
+    
 
-    function validPhone(num) {
-        if (/^(13|14|15|18)\d{9}$/.test(num)) {
-            return true;
-        } else {
-            return false;
-        }
-    }
+    
 
-    $('#txyy').click(function () {
-        var pnum = $("#phone").val();
-
-        if (!validPhone(pnum)) {
-            alert("ÊÖ»úºÅÂëÓĞÎó£¬ÇëÌîĞ´ÕıÈ·£¡");
-			$("#phone").focus();
-        } else {
-            collectPho("txhd", pnum, window.location.href);
-			$("#phone").focus();
-        }
-    });
-
-    function collectPho(game_name, phone, src) {
-        var os = 'ios';
-        if (/android/i.test(navigator.userAgent.toLowerCase())) {
-            os = 'android';
-        }
-        $.ajax({
-            url: "http://mobile-game-appoint.webapp.163.com/appoint/" + game_name + "/" + phone + "/" + os + "/?src=" + src,
-            async: false,
-            dataType: "jsonp",
-            success: function (result) {
-                if (result.status == "ok") {
-                    alert("ÑéÖ¤Âë·¢ËÍ³É¹¦£¬Çë×¢Òâ¶ÌĞÅ£¡");
-					$(".yy").hide();
-					$(".yz").show();
-                } else {
-                    alert(result.status);
-                }
-            }
-        });
-    }
+    
 
 
-    $('#txyz').click(function () {
-        var pnum = $("#phone").val();
-        var yzm = $("#yzm").val();
-
-        collectCode("txhd", pnum, yzm);
-		$("#yzm").focus();
-    });
-
-    function collectCode(game_name, phone, authcode) {
-        var os = 'ios';
-        if (/android/i.test(navigator.userAgent.toLowerCase())) {
-            os = 'android';
-        }
-        $.ajax({
-            url: "http://mobile-game-appoint.webapp.163.com/appoint_submit_authcode/" + game_name + "/" + phone + "/" + os + "/?auth_code=" + authcode,
-            async: false,
-            dataType: "jsonp",
-            success: function (result) {
-                if (result.status == "ok") {
-                   alert("Ô¤Ô¼³É¹¦£¡Ğ»Ğ»ÄúµÄ¹Ø×¢£¡");
-                } else {
-                    alert(result.status);
-                }
-            }
-        });
-    }
+  
+  
 	
 
 	
@@ -122,7 +56,7 @@ $('.gb').click(function () {
 		window.location.href=_uri;
 	});
 	$(".kj").click(function(){
-		var _uri="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?summary=ÍøÒ×ÓÎÏ·&url=" + encodeURIComponent(shareUrl) + "&title=" + encodeURIComponent(shareTitle)+ "&desc=" + encodeURIComponent(shareTxt)+ "&pics=" + encodeURIComponent(sharePic);
+		var _uri="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?summary=ç½‘æ˜“æ¸¸æˆ&url=" + encodeURIComponent(shareUrl) + "&title=" + encodeURIComponent(shareTitle)+ "&desc=" + encodeURIComponent(shareTxt)+ "&pics=" + encodeURIComponent(sharePic);
 		window.location.href=_uri;
 	});
 	$(".py").click(function(){
@@ -136,7 +70,7 @@ $('.gb').click(function () {
 
 function WeiXinShareBtn() { 
  if (typeof WeixinJSBridge == "undefined") { 
- alert("ÇëÓÃÎ¢ĞÅ´ò¿ª£¡"); 
+ alert("è¯·ç”¨å¾®ä¿¡æ‰“å¼€ï¼"); 
  } else { 
  WeixinJSBridge.invoke('shareTimeline', { 
  "title": shareTitle, 
@@ -150,10 +84,10 @@ function WeiXinShareBtn() {
 
 
 	
-//·ÖÏíµ½Î¢ĞÅÅóÓÑÈ¦£¬Î¢ĞÅÅóÓÑ
+//åˆ†äº«åˆ°å¾®ä¿¡æœ‹å‹åœˆï¼Œå¾®ä¿¡æœ‹å‹
 var onBridgeReady = function () {
 	var appId = '';
-	// ·¢ËÍ¸øºÃÓÑ;
+	// å‘é€ç»™å¥½å‹;
 	WeixinJSBridge.on('menu:share:appmessage', function(argv){
 		var imgUrl = shareIco;
 		var link = shareUrl;
@@ -170,7 +104,7 @@ var onBridgeReady = function () {
 
 		});
 	});
-	// ·ÖÏíµ½ÅóÓÑÈ¦;
+	// åˆ†äº«åˆ°æœ‹å‹åœˆ;
 	WeixinJSBridge.on('menu:share:timeline', function(argv){
 		var imgUrl = shareIco;
 		var link = shareUrl;

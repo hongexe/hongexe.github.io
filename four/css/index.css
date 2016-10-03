@@ -14,7 +14,7 @@ body{height:100%; background-color:#FFF;}
 .txt3{ position:absolute; width:240px; height:78px; left:200px; top:490px; background:url('../images/1-txt-3.png');opacity:0; transition: all 1s;}
 .audio{ position:absolute; width:258px; height:64px; left:191px; bottom:100px; background:url('../images/1-02.png');opacity:0; transition: all 1s;}
 .meettxt1{ position:absolute; width:454px; height:78px; left:93px; top:70px; background:url('../images/2-txt-1.png');opacity:0; transition: all 1s;}
-.meettxt2{ position:absolute; width:477px; height:202px; left:81px; top:250px; background:url('../images/2-txt-2.png');opacity:0; transition: all 1s;}
+.meettxt2{ position:absolute; width:477px; height:202px; left:90px; top:250px; background:url('../images/2-txt-2.png');opacity:0; transition: all 1s;}
 .meetpic1{ position:absolute; width:190px; height:431px; left:0px; bottom:20px; background:url('../images/2-m.png');opacity:0; transition: all 1s;}
 .meetpic2{ position:absolute; width:198px; height:427px; right:0px; bottom:20px; background:url('../images/2-y.png');opacity:0; transition: all 1s;}
 .saytxt1{ position:absolute; width:462px; height:83px; left:89px; top:100px; background:url('../images/3-txt-1.png');opacity:0; transition: all 1s;}
