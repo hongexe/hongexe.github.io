@@ -1,9 +1,4 @@
 // JavaScript Document
-var shareTitle = '';
-var shareTxt = '';
-var shareUrl = '';
-var sharePic = '';
-var shareIco = '';
 var winObj = $(window);
 
 $(document).ready(function() {
@@ -79,92 +74,63 @@ $("#music_btn2").click(function(){
 }); 
 
     
-
+var imgUrl = "http://hongexe.github.io/four/images/1.png";  
+       var lineLink = "";  
+       var descContent = '愿你有酒有肉日复日，无风无雨年复年。'; 
+       var shareTitle = '壹零肆日|生日快乐';  
+       var appid = ''; 
+        
+       function shareFriend() {
+           WeixinJSBridge.invoke('sendAppMessage',{
+               "appid": appid,
+               "img_url": imgUrl,
+               "img_width": "200",
+               "img_height": "200",
+               "link": lineLink,
+               "desc": descContent,
+               "title": shareTitle
+           }, function(res) {
+               //_report('send_msg', res.err_msg);
+           })
+       }
+       function shareTimeline() {
+           WeixinJSBridge.invoke('shareTimeline',{
+               "img_url": imgUrl,
+               "img_width": "200",
+               "img_height": "200",
+               "link": lineLink,
+               "desc": descContent,
+               "title": shareTitle
+           }, function(res) {
+                  //_report('timeline', res.err_msg);
+           });
+       }
+       function shareWeibo() {
+           WeixinJSBridge.invoke('shareWeibo',{
+               "content": descContent,
+               "url": lineLink,
+           }, function(res) {
+               //_report('weibo', res.err_msg);
+           });
+       }
+       // 当微信内置浏览器完成内部初始化后会触发WeixinJSBridgeReady事件。
+       document.addEventListener('WeixinJSBridgeReady', function onBridgeReady() {
+           // 发送给好友
+           WeixinJSBridge.on('menu:share:appmessage', function(argv){
+               shareFriend();
+           });
+           // 分享到朋友圈
+           WeixinJSBridge.on('menu:share:timeline', function(argv){
+               shareTimeline();
+           });
+           // 分享到微博
+           WeixinJSBridge.on('menu:share:weibo', function(argv){
+               shareWeibo();
+           });
+       }, false);
 
   
   
 	
 
 	
-	$(".yx").click(function(){
-		var _uri = "http://open.yixin.im/share?appkey=yx3ae08a776bf04178a583cb745fb6aa0c&type=webpage&url="+encodeURIComponent(shareUrl)+'&title='+encodeURIComponent(shareTitle)+'&desc='+encodeURIComponent(shareTxt)+'&pic='+encodeURIComponent(shareIco);
-		window.location.href=_uri;
-	});
-	$(".wb").click(function(){
-		var _uri="http://service.weibo.com/share/share.php?c=nie&content=gb2312&source=nie&title=" + encodeURIComponent(shareTxt) + "&url=" + encodeURIComponent(shareUrl) + "&pic=" + encodeURIComponent(sharePic);
-		window.location.href=_uri;
-	});
-	$(".kj").click(function(){
-		var _uri="http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?summary=网易游戏&url=" + encodeURIComponent(shareUrl) + "&title=" + encodeURIComponent(shareTitle)+ "&desc=" + encodeURIComponent(shareTxt)+ "&pics=" + encodeURIComponent(sharePic);
-		window.location.href=_uri;
-	});
-	$(".py").click(function(){
-		var _uri = "http://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?to=pengyou&url=" + encodeURIComponent(shareUrl) + "&title=" + encodeURIComponent(shareTitle)+  "&desc=" + encodeURIComponent(shareTxt)+ "&pics=" + encodeURIComponent(sharePic);
-		window.location.href=_uri;
-	});
-	$('.wx').click(function () {
-       WeiXinShareBtn()
-});
-
-
-function WeiXinShareBtn() { 
- if (typeof WeixinJSBridge == "undefined") { 
- alert("请用微信打开！"); 
- } else { 
- WeixinJSBridge.invoke('shareTimeline', { 
- "title": shareTitle, 
- "link": shareUrl, 
- "desc": shareTxt, 
- "img_url": shareIco 
- }); 
- } 
- }
-
-
-
-	
-//分享到微信朋友圈，微信朋友
-var onBridgeReady = function () {
-	var appId = '';
-	// 发送给好友;
-	WeixinJSBridge.on('menu:share:appmessage', function(argv){
-		var imgUrl = shareIco;
-		var link = shareUrl;
-		var title = shareTitle;
-		var shareDesc = shareTxt;
-		WeixinJSBridge.invoke('sendAppMessage',{
-			'img_url' : imgUrl,
-			'img_width' : '640',
-			'img_height' : '640',
-			'link' : link,
-			'desc' : shareDesc,
-			'title' : title
-			}, function(res) {
-
-		});
-	});
-	// 分享到朋友圈;
-	WeixinJSBridge.on('menu:share:timeline', function(argv){
-		var imgUrl = shareIco;
-		var link = shareUrl;
-		var title = shareTitle;
-		var shareDesc = shareTxt;
-		WeixinJSBridge.invoke('shareTimeline',{
-		'img_url' : imgUrl,
-		'img_width' : '640',
-		'img_height' : '640',
-		'link' : link,
-		'desc' : shareDesc,
-		'title' : shareDesc
-		}, function(res) {
-
-		});
-	});
-};
-if(document.addEventListener){
-	document.addEventListener('WeixinJSBridgeReady', onBridgeReady, false);
-} else if(document.attachEvent){
-	document.attachEvent('WeixinJSBridgeReady' , onBridgeReady);
-	document.attachEvent('onWeixinJSBridgeReady' , onBridgeReady);
-
-}
