@@ -14,21 +14,26 @@ $(document).ready(function() {
 		afterLoad: function(anchorLink, index){
             if(index == '1'){
 				$(".gotodown").fadeIn();
+				$(".rtaudio").fadeOut();
 				
             } else if(index == '2'){
 				$(".gotodown").fadeIn();
+				$(".rtaudio").fadeIn();
 				
 				} else if(index == '3'){
 				
 				$(".gotodown").fadeIn();
+				$(".rtaudio").fadeIn();
 				
 				} else if(index == '4'){
 				
 				$(".gotodown").fadeIn();
+				$(".rtaudio").fadeIn();
 				
 				} else if(index == '5'){
 				
 				$(".gotodown").fadeOut();
+				$(".rtaudio").fadeIn();
 				
 				}
         }
@@ -37,9 +42,34 @@ $(document).ready(function() {
 	
 });
 
+$("#music_btn2").addClass("stop");
     
+$("#audio_btn").click(function(){ 
+    var music = document.getElementById("music"); 
+    if(music.paused){ 
+        music.play();
+		$("#music_btn2").addClass("play");
+		$("#music_btn2").removeClass("stop");
+		$.fn.fullpage.moveTo(2);
+    }else{ 
+        music.pause(); 
+        $("#music_btn2").addClass("stop");
+		$("#music_btn2").removeClass("play");
+    } 
+}); 
 
-    
+$("#music_btn2").click(function(){ 
+    var music = document.getElementById("music"); 
+    if(music.paused){ 
+        music.play();
+		$(this).addClass("play");
+		$("#music_btn2").removeClass("stop");
+    }else{ 
+        music.pause(); 
+        $(this).addClass("stop");
+		$("#music_btn2").removeClass("play");
+    } 
+}); 
 
     
 
