@@ -155,7 +155,7 @@ body {
   margin: 0;
   color: #1a1a1a;
 }
-@media (max-width: 640px) {
+/*@media (max-width: 640px) {
   .panels {
     width: 100%;
     height: 200vh;
@@ -258,7 +258,7 @@ body {
   .panels p {
     font-size: 20px;
   }
-}
+}*/
 .arrow {
   position: absolute;
   top: 75%;
@@ -272,7 +272,7 @@ body {
   -webkit-transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
           transition: all 0.5s cubic-bezier(0.23, 1, 0.32, 1);
 }
-@media (max-width: 640px) {
+/*@media (max-width: 640px) {
   .arrow {
     -webkit-transform: translate(-50%, -50%) rotate(90deg);
         -ms-transform: translate(-50%, -50%) rotate(90deg);
@@ -281,7 +281,7 @@ body {
   .arrow--left {
     top: 25%;
   }
-}
+}*/
 .arrow--left {
 	display:none
 	}
